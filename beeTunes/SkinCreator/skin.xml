@@ -5,223 +5,223 @@
 <!-- MusicBee can resize the player panel depending on the font used, and whether 'enlarge progress bar' is enabled and as such MusicBee stretches certain images (panel background, track info panel, progress bar). The StetchY1 and StretchY2 attributes tell MusicBee which part of the image can be stretched eg. usually you want the border area of an image to remain "sharp" and not be stretched eg. StretchY1="4" StretchY2="2" means stretch the area starting from 4px and height-2 of the image -->
 
 <!-- beeTunes -->
-<!-- Version 1 -->
-<!-- 02/09/2014 -->
+<!-- Version 2 -->
+<!-- 02/12/2014 -->
 
 <root sourceSkin="No-Bitmap">
-<element id="Panel">
-  <images stretchY1="1" stretchY2="0"
-    default="Images\Background.png"
-  />
-</element>
+	<element id="Panel">
+		<images stretchY1="1" stretchY2="0"
+			default="Images\Background.png"
+		/>
+	</element>
 
-<element id="PrevTrackButton" parent="Panel">
-  <left relativeTo="Panel.Left" offset="37" />
-  <top relativeTo="Panel.VerticalCenter" offset="0" />
-  <!-- musicbee draws the |<< icon in the centre of this image. The colours for the musicbee drawn icon are determined from the skin file -->
-  <images drawPlayButton="false"
-    default="Images\PrevButton.png"
-  />
-</element>
+	<element id="PrevTrackButton" parent="Panel">
+		<left relativeTo="Panel.Left" offset="37" />
+		<top relativeTo="Panel.VerticalCenter" offset="0" />
+		<!-- musicbee draws the |<< icon in the centre of this image. The colours for the musicbee drawn icon are determined from the skin file -->
+		<images drawPlayButton="false"
+			default="Images\PrevButton.png"
+		/>
+	</element>
 
-<element id="PlayPauseButton" parent="Panel">
-  <left relativeTo="Panel.Left" offset="84" />
-  <top relativeTo="Panel.VerticalCenter" offset="0" />
-  <!-- musicbee draws the > or || icon in the centre of this image if drawPlayButton="True" -->
-  <images category="Play" drawPlayButton="false"
-    default="Images\PlayButton.png"
-  />
-  <!-- if drawPlayButton="false" then you need to provide an image for Pause -->
-  <images category="Pause" drawPlayButton="false"
-    default="Images\PauseButton.png"
-  />
-</element>
+	<element id="PlayPauseButton" parent="Panel">
+		<left relativeTo="Panel.Left" offset="84" />
+		<top relativeTo="Panel.VerticalCenter" offset="0" />
+		<!-- musicbee draws the > or || icon in the centre of this image if drawPlayButton="True" -->
+		<images category="Play" drawPlayButton="false"
+			default="Images\PlayButton.png"
+		/>
+		<!-- if drawPlayButton="false" then you need to provide an image for Pause -->
+		<images category="Pause" drawPlayButton="false"
+			default="Images\PauseButton.png"
+		/>
+	</element>
 
-<element id="NextTrackButton" parent="Panel">
-  <left relativeTo="Panel.Left" offset="124" />
-  <top relativeTo="Panel.VerticalCenter" offset="0" />
-  <!-- musicbee draws the >>| icon in the centre of this image if drawPlayButton="True" -->
-  <images drawPlayButton="false"
-    default="Images\NextButton.png"
-  />
-</element>
+	<element id="NextTrackButton" parent="Panel">
+		<left relativeTo="Panel.Left" offset="124" />
+		<top relativeTo="Panel.VerticalCenter" offset="0" />
+		<!-- musicbee draws the >>| icon in the centre of this image if drawPlayButton="True" -->
+		<images drawPlayButton="false"
+			default="Images\NextButton.png"
+		/>
+	</element>
 
-<element id="StopTrackButton" parent="Panel">
-  <left relativeTo="Panel.Left" offset="-100" />
-  <top relativeTo="Panel.VerticalCenter" offset="-100" />
-  <!-- musicbee draws the [] icon in the centre of this image if drawPlayButton="True" -->
-  <images drawPlayButton="false"
-    default="Images\ButtonSmall.png"
-  />
-</element>
+	<element id="StopTrackButton" parent="Panel">
+		<left relativeTo="Panel.Left" offset="-100" />
+		<top relativeTo="Panel.VerticalCenter" offset="-100" />
+		<!-- musicbee draws the [] icon in the centre of this image if drawPlayButton="True" -->
+		<images drawPlayButton="false"
+			default="Images\ButtonSmall.png"
+		/>
+	</element>
 
-<element id="Speaker" parent="Panel">
-  <left relativeTo="Panel.Left" offset="-100" />
-  <top relativeTo="Panel.VerticalCenter" offset="-100" />
-  <images category="MuteOff"
-    default="Images\VolumeOn.png"
-  />
-  <images category="MuteOn"
-    default="Images\VolumeOff.png"
-  />
-</element>
+	<element id="Speaker" parent="Panel">
+		<left relativeTo="Panel.Left" offset="-100" />
+		<top relativeTo="Panel.VerticalCenter" offset="-100" />
+		<images category="MuteOff"
+			default="Images\VolumeOn.png"
+		/>
+		<images category="MuteOn"
+			default="Images\VolumeOff.png"
+		/>
+	</element>
 
-<element id="VolumeSlidebar" parent="Panel">
-  <left relativeTo="Panel.Left" offset="165" />
-  <top relativeTo="Panel.VerticalCenter" offset="0" />
-  <images category="Slidebar"
-    default="Images\VolumeSlidebar.png"
-  />
-  <images category="Button"
-    default="Images\VolumeButton.png"
-  />
-</element>
+	<element id="VolumeSlidebar" parent="Panel">
+		<left relativeTo="Panel.Left" offset="165" />
+		<top relativeTo="Panel.VerticalCenter" offset="0" />
+		<images category="Slidebar"
+			default="Images\VolumeSlidebar.png"
+		/>
+		<images category="Button"
+			default="Images\VolumeButton.png"
+		/>
+	</element>
 
-<element id="TrackInfoPanel" parent="Panel">
-  <left relativeTo="Panel.Left" offset="300" />
-  <top relativeTo="Panel.Top" offset="4" />
-  <right relativeTo="Panel.Right" offset="-300" />
-  <bottom relativeTo="Panel.Bottom" offset="-2" />
-  <images category="Left" stretchY1="3" stretchY2="4"
-    default="Images\TrackInfoLeft.png"
-  />
-  <images category="Middle" stretchY1="2" stretchY2="3"
-    default="Images\TrackInfoMiddle.png"
-  />
-  <images category="Right" stretchY1="3" stretchY2="4"
-    default="Images\TrackInfoRight.png"
-  />
-</element>
+	<element id="TrackInfoPanel" parent="Panel">
+		<left relativeTo="Panel.Left" offset="300" />
+		<top relativeTo="Panel.Top" offset="4" />
+		<right relativeTo="Panel.Right" offset="-300" />
+		<bottom relativeTo="Panel.Bottom" offset="-2" />
+		<images category="Left" stretchY1="3" stretchY2="4"
+			default="Images\TrackInfoLeft.png"
+		/>
+		<images category="Middle" stretchY1="2" stretchY2="3"
+			default="Images\TrackInfoMiddle.png"
+		/>
+		<images category="Right" stretchY1="3" stretchY2="4"
+			default="Images\TrackInfoRight.png"
+		/>
+	</element>
 
-<element id="Spectrum" parent="TrackInfoPanel">
-  <left relativeTo="TrackInfoPanel.Left" offset="12" />
-  <top relativeTo="TrackInfoPanel.Top" offset="6" />
-  <!-- for now the spectrum area needs to be 32px wide -->
-  <right relativeTo="TrackInfoPanel.Left" offset="44" />
-  <bottom relativeTo="TrackInfoPanel.Bottom" offset="-5" />
-</element>
+	<element id="Spectrum" parent="TrackInfoPanel">
+		<left relativeTo="TrackInfoPanel.Left" offset="12" />
+		<top relativeTo="TrackInfoPanel.Top" offset="6" />
+		<!-- for now the spectrum area needs to be 32px wide -->
+		<right relativeTo="TrackInfoPanel.Left" offset="44" />
+		<bottom relativeTo="TrackInfoPanel.Bottom" offset="-5" />
+	</element>
 
-<element id="TrackInfoButton" parent="TrackInfoPanel">
-  <left relativeTo="Panel.Left" offset="-100" />
-  <top relativeTo="TrackText.VerticalCenter" offset="0" />
-  <images
-    default="Images\TrackInfoButton.png"
-  />
-</element>
+	<element id="TrackInfoButton" parent="TrackInfoPanel">
+		<left relativeTo="Panel.Left" offset="-100" />
+		<top relativeTo="TrackText.VerticalCenter" offset="0" />
+		<images
+			default="Images\TrackInfoButton.png"
+		/>
+	</element>
 
-<element id="TrackText" parent="TrackInfoPanel">
-  <left relativeTo="TrackInfoPanel.Left" offset="105" />
-  <top relativeTo="TrackInfoPanel.Top" offset="10" />
-  <right relativeTo="TrackInfoPanel.Right" offset="-105" />
-  <!-- bottom will be computed at runtime depending on the font used -->
-</element>
+	<element id="TrackText" parent="TrackInfoPanel">
+		<left relativeTo="TrackInfoPanel.Left" offset="105" />
+		<top relativeTo="TrackInfoPanel.Top" offset="10" />
+		<right relativeTo="TrackInfoPanel.Right" offset="-105" />
+		<!-- bottom will be computed at runtime depending on the font used -->
+	</element>
 
-<element id="TrackLove" parent="TrackInfoPanel">
-  <left relativeTo="TrackRating.Left" offset="-21" />
-  <top relativeTo="TrackText.VerticalCenter" offset="0" />
-  <images category="NotLoved"
-    default="Images\LastFmNotLove.png"
-    highlight="Images\LastFmNotLoveBright.png"
-  />
-  <images category="Loved"
-    default="Images\LastFmLove.png"
-  />
-</element>
+	<element id="TrackLove" parent="TrackInfoPanel">
+		<left relativeTo="TrackRating.Left" offset="-21" />
+		<top relativeTo="TrackText.VerticalCenter" offset="0" />
+		<images category="NotLoved"
+			default="Images\LastFmNotLove.png"
+			highlight="Images\LastFmNotLoveBright.png"
+		/>
+		<images category="Loved"
+			default="Images\LastFmLove.png"
+		/>
+	</element>
 
-<element id="TrackRating" parent="TrackInfoPanel">
-  <left relativeTo="TrackInfoPanel.Right" offset="-15" />
-  <top relativeTo="TrackText.VerticalCenter" offset="0" />
-</element>
+	<element id="TrackRating" parent="TrackInfoPanel">
+		<left relativeTo="TrackInfoPanel.Right" offset="-15" />
+		<top relativeTo="TrackText.VerticalCenter" offset="0" />
+	</element>
 
-<element id="TrackPosition" parent="TrackInfoPanel">
-  <left relativeTo="TrackInfoPanel.Right" offset="0" />
-  <top relativeTo="ProgressBar.VerticalCenter" offset="0" />
-</element>
+	<element id="TrackPosition" parent="TrackInfoPanel">
+		<left relativeTo="TrackInfoPanel.Right" offset="0" />
+		<top relativeTo="ProgressBar.VerticalCenter" offset="0" />
+	</element>
 
-<element id="ProgressBar" parent="TrackInfoPanel">
-  <left relativeTo="RepeatButton.Right" offset="38" />
-  <top relativeTo="TrackInfoPanel.Bottom" offset="-20" />
-  <right relativeTo="ShuffleButton.Right" offset="-62" />
-  <bottom relativeTo="TrackInfoPanel.Bottom" offset="-7" />
-  <bufferingMargin top="3" bottom="3" left="2" right="2" />
-  <images category="Background" stretchY1="5" stretchY2="2" stretchX1="6" stretchX2="0"
-    default="Images\ProgressBar.png"
-  />
-  <images category="Filler"
-    default="Images\ProgressBarFill.png"
-  />
-  <!-- remove this node if the progress bar will not have a button -->
-  <images category="Button"
-    default="Images\ProgressBarButton.png"
-  />
-</element>
+	<element id="ProgressBar" parent="TrackInfoPanel">
+		<left relativeTo="RepeatButton.Right" offset="38" />
+		<top relativeTo="TrackInfoPanel.Bottom" offset="-20" />
+		<right relativeTo="ShuffleButton.Right" offset="-62" />
+		<bottom relativeTo="TrackInfoPanel.Bottom" offset="-7" />
+		<bufferingMargin top="3" bottom="3" left="2" right="2" />
+		<images category="Background" stretchY1="5" stretchY2="2" stretchX1="6" stretchX2="0"
+			default="Images\ProgressBar.png"
+		/>
+		<images category="Filler"
+			default="Images\ProgressBarFill.png"
+		/>
+		<!-- remove this node if the progress bar will not have a button -->
+		<images category="Button"
+			default="Images\ProgressBarButton.png"
+		/>
+	</element>
 
-<element id="EqualiserButton" parent="Panel">
-  <left relativeTo="TrackInfoPanel.Right" offset="50" />
-  <top relativeTo="Panel.VerticalCenter" offset="0" />
-  <images category="Off"
-    default="Images\EqualiserOff.png"
-    highlight="Images\EqualiserOffHighlight.png"
-  />
-  <images category="On"
-    default="Images\EqualiserOn.png"
-    highlight="Images\EqualiserOnHighlight.png"
-  />
-</element>
+	<element id="EqualiserButton" parent="Panel">
+		<left relativeTo="TrackInfoPanel.Right" offset="50" />
+		<top relativeTo="Panel.VerticalCenter" offset="0" />
+		<images category="Off"
+			default="Images\EqualiserOff.png"
+			highlight="Images\EqualiserOffHighlight.png"
+		/>
+		<images category="On"
+			default="Images\EqualiserOn.png"
+			highlight="Images\EqualiserOnHighlight.png"
+		/>
+	</element>
 
-<element id="LastFmButton" parent="Panel">
-  <left relativeTo="EqualiserButton.Right" offset="4" />
-  <top relativeTo="Panel.VerticalCenter" offset="0" />
-  <images category="Off"
-    default="Images\LastFmOff.png"
-    highlight="Images\LastFmOffHighlight.png"
-  />
-  <images category="On"
-    default="Images\LastFmOn.png"
-    highlight="Images\LastFmOnHighlight.png"
-  />
-  <images category="Error"
-    default="Images\LastFmError.png"
-    highlight="Images\LastFmErrorHighlight.png"
-  />
-</element>
+	<element id="LastFmButton" parent="Panel">
+		<left relativeTo="EqualiserButton.Right" offset="4" />
+		<top relativeTo="Panel.VerticalCenter" offset="0" />
+		<images category="Off"
+			default="Images\LastFmOff.png"
+			highlight="Images\LastFmOffHighlight.png"
+		/>
+		<images category="On"
+			default="Images\LastFmOn.png"
+			highlight="Images\LastFmOnHighlight.png"
+		/>
+		<images category="Error"
+			default="Images\LastFmError.png"
+			highlight="Images\LastFmErrorHighlight.png"
+		/>
+	</element>
 
-<element id="RepeatButton" parent="TrackInfoPanel">
-  <left relativeTo="Spectrum.Right" offset="8" />
-  <top relativeTo="ProgressBar.VerticalCenter" offset="0" />
-  <images category="Off"
-    default="Images\RepeatOff.png"
-    highlight="Images\RepeatOffHighlight.png"
-  />
-  <images category="On"
-    default="Images\RepeatOn.png"
-    highlight="Images\RepeatOnHighlight.png"
-  />
-  <images category="One"
-    default="Images\RepeatOne.png" 
-    highlight="Images\RepeatOneHighlight.png"
-  />
-</element>
+	<element id="RepeatButton" parent="TrackInfoPanel">
+		<left relativeTo="Spectrum.Right" offset="8" />
+		<top relativeTo="ProgressBar.VerticalCenter" offset="0" />
+		<images category="Off"
+			default="Images\RepeatOff.png"
+			highlight="Images\RepeatOffHighlight.png"
+		/>
+		<images category="On"
+			default="Images\RepeatOn.png"
+			highlight="Images\RepeatOnHighlight.png"
+		/>
+		<images category="One"
+			default="Images\RepeatOne.png" 
+			highlight="Images\RepeatOneHighlight.png"
+		/>
+	</element>
 
-<element id="ShuffleButton" parent="TrackInfoPanel">
-  <left relativeTo="TrackInfoPanel.Right" offset="-76" />
-  <top relativeTo="ProgressBar.VerticalCenter" offset="0" />
-  <images category="Off"
-    default="Images\ShuffleOff.png"
-    highlight="Images\ShuffleOffHighlight.png"
-  />
-  <images category="On"
-    default="Images\ShuffleOn.png"
-    highlight="Images\ShuffleOnHighlight.png"
-  />
-  <images category="AutoDJ"
-     default="Images\ShuffleAutoDj.png"
-  />
-</element>
+	<element id="ShuffleButton" parent="TrackInfoPanel">
+		<left relativeTo="TrackInfoPanel.Right" offset="-76" />
+		<top relativeTo="ProgressBar.VerticalCenter" offset="0" />
+		<images category="Off"
+			default="Images\ShuffleOff.png"
+			highlight="Images\ShuffleOffHighlight.png"
+		/>
+		<images category="On"
+			default="Images\ShuffleOn.png"
+			highlight="Images\ShuffleOnHighlight.png"
+		/>
+		<images category="AutoDJ"
+			default="Images\ShuffleAutoDj.png"
+		/>
+	</element>
 
-<!-- spectrum, love and rating can be hidden by user preference - when an element is located relative to one of these (hidden) elements, the following rules specify which element should be used instead for the relative reference -->
-<!-- the offsetAdjustment attribute enables you to tweak the offset of the dependee element eg. if TrackInfoButton depends of Spectrum with an offset of 15, when Spectrum is hidden TrackInfoButton is placed relative to TrackInfoPanel.Left with offset 8 (15-7)  using the rule below -->
-<replacementElement id="Spectrum" replaceWith="TrackInfoPanel.Left" offsetAdjustment="44" />
-<replacementElement id="TrackLove" replaceWith="TrackRating.Left" offsetAdjustment="-21" />
-<replacementElement id="TrackRating" replaceWith="TrackInfoPanel.Right" offsetAdjustment="-15" />
+	<!-- spectrum, love and rating can be hidden by user preference - when an element is located relative to one of these (hidden) elements, the following rules specify which element should be used instead for the relative reference -->
+	<!-- the offsetAdjustment attribute enables you to tweak the offset of the dependee element eg. if TrackInfoButton depends of Spectrum with an offset of 15, when Spectrum is hidden TrackInfoButton is placed relative to TrackInfoPanel.Left with offset 8 (15-7)  using the rule below -->
+	<replacementElement id="Spectrum" replaceWith="TrackInfoPanel.Left" offsetAdjustment="44" />
+	<replacementElement id="TrackLove" replaceWith="TrackRating.Left" offsetAdjustment="-21" />
+	<replacementElement id="TrackRating" replaceWith="TrackInfoPanel.Right" offsetAdjustment="-15" />
 </root>
