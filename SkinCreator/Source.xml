@@ -9,8 +9,11 @@
   <element id="TitlebarInactiveForeColour" bg="129,129,129" />
 
   <element id="ApplicationBackColour" bg="212,212,212" /> 
-  <element id="WindowBackColour" bg="212,212,212" /> 
+  <element id="WindowBackColour" bg="212,212,212" />
 
+
+<!--- Hide menu when docked at top -->
+  <element id="AutoHideMenu">false</element>
 
 
 <!--- Non-inline menubar color -->
@@ -36,6 +39,13 @@
   <element id="Menu.DropDownCheckBox.Highlight" bg="237,242,247" />
 <!--- File menu highlighted checkbox border color -->
   <element id="Menu.DropDownCheckBoxBorder.Highlight" bg="174,207,247" /> 
+<!--- Panel separator widths -->
+  <element id="MainPanelSeparatorMargin">0</element>
+  <element id="MainPanelMargin.Left">0</element>
+  <element id="MainPanelMargin.Right">0</element>
+  <element id="MainPanelMargin.Top">0</element>
+  <element id="MainPanelMargin.Bottom">0</element>
+  <element id="ScrollBarMargin">1</element>
 
 <!--- Justification of File menu -->
   <element id="MenuBarDock">right</element>
@@ -86,19 +96,19 @@
   <element id="Panel.StarRating.Highlight" fg="255,255,255" fg2="75,149,229" /> 
 <!--- Rated/Unrated highlighted, unfocused list star color -->
   <element id="Panel.StarRating.Lowlight" fg="245,245,245" fg2="203,203,203" /> 
-  <element id="TabsBar.Background" bg="220,220,220" bdr="255,255,255" />
-  <element id="TabsBar.Tab.Default" bg="230,230,230" fg="30,30,30" bdr="180,180,180" />
-  <element id="TabsBar.Tab.Highlight" bg="220,220,220" fg="20,20,20" bdr="170,170,170" /> 
+  <element id="TabsBar.Background" bg="200,200,200" bdr="255,255,255" />
+  <element id="TabsBar.Tab.Default" bg="210,210,210" fg="30,30,30" bdr="180,180,180" />
+  <element id="TabsBar.Tab.Highlight" bg="240,240,240" fg="20,20,20" bdr="170,170,170" /> 
   <element id="TabsBar.DropCursor" bg="90,90,90" /> 
 
 <!--- Default list color -->
   <element id="Content[TrackDetail].Body.Default" bg="255,255,255" fg="0,0,0" bdr= "220,220,220" /> 
   <element id="Content[TrackDetail].Body.ListHeader" bg="240,240,240" bg2="210,210,210" fg="0,0,0" bdr="180,180,180" />
 <!--- Focused, selected list color -->
-  <element id="Content[TrackDetail].Body.Highlight" bg="75,149,229" fg="0,0,0" />
+  <element id="Content[TrackDetail].Body.Highlight" bg="75,149,229" fg="255,255,255" />
 <!--- Unfocused, selected list color -->
   <element id="Content[TrackDetail].Body.Lowlight" bg="203,203,203" fg="0,0,0" />
-<!--- Alternating list color -->
+<!--- Alternate list color -->
   <element id="Content[TrackDetail].ListAlternating.Default" bg="242,245,249" fg="0,0,0" />
 <!--- Now playing list color? -->
   <element id="Content[TrackDetail].ListAlternating.Disabled" bg="242,245,249" fg="0,0,0" />
@@ -110,8 +120,8 @@
   <element id="Content[Artwork].HeaderControl.Default" bg="240,240,240" fg="0,0,0" bdr= "180,180,180"  />
 
   <element id="Content[ArtistProfile]" bg="240,240,240" fg="0,0,0" bdr= "180,180,180"  />
-  <element id="LyricsPanel" />
-  <element id="TrackInfoPanel" bg="240,240,240" fg="0,0,0" bdr= "180,180,180"  />
+  <element id="LyricsPanel" bg="240,240,240" fg="0,0,0" bdr= "180,180,180" />
+  <element id="TrackInfoPanel" bg="255,255,255" fg="0,0,0" bdr= "137,140,149"  />
   <element id="ArtworkPanel" bg="240,240,240" fg="0,0,0" bdr="180,180,180"  />
 
   <element id="Content[AlbumAndTracks].ArtistSplitterLine" bg="150,150,150"/>
@@ -121,11 +131,11 @@
 <!--- Player panel background -->
   <element id="Player.Background" bg="212,212,212" bg2="179,179,179" fg="60,60,60" bdr="220,220,220" />
 <!--- Player panel display -->
-  <element id="Player.DisplayPanel" bg="212,212,212" bg2="233,236,209" fg="0,0,0" />
+  <element id="Player.DisplayPanel" bg="212,212,212" bg2="233,236,209" fg="78,80,69" />
   <element id="Player.ProgressBar" bg="230,230,230" bdr="169,212,255" /> 
   <element id="Controls.Counter" bg="150,150,150" fg="255,255,255" />
   <element id="Controls.TabHeader.Default" bg="235,235,235" fg="0,0,0" bdr="0,0,0" />
-  <element id="Controls.TabHeader.Highlight" bg="210,210,210" fg="0,0,0"/>
+  <element id="Controls.TabHeader.Highlight" bg="255,255,255" fg="0,0,0"/>
   <element id="Controls.TabHeader.Lowlight" bg="255,255,255" fg="0,0,0" />
 
   <element id="Controls.DropdownButton.Default" bg="245,245,245" bg2="190,190,190" fg="70,70,70" bdr="215,215,215" /> 
@@ -183,12 +193,22 @@
 
   <element id="NavigatorPanel.Body.Default" />
 
-  <element id="Controls.TabHeader.Default" bg="220,220,220" fg="115,115,115" bdr="140,140,140" /> 
-  <element id="Controls.TabHeader.Highlight" bg="240,240,240" fg="00,00,00"/> 
-  <element id="Controls.TabHeader.Lowlight" bg="200,200,200" fg="40,40,40" /> 
+
+  <element id="Controls.TabHeader.Default" bg="218,218,218" fg="0,0,0" bdr="137,140,149" /> 
+  <element id="Controls.TabHeader.Highlight" bg="255,255,255" fg="00,00,00" bdr="137,140,149" /> 
+  <element id="Controls.TabHeader.Lowlight" bg="218,218,218" fg="0,0,0" /> 
 
   <element id="Panel.NotLovedIcon.Highlight" fg="226,154,146" fg2="188,240,223" /> 
   <element id="Panel.NotLovedIcon.Lowlight" fg2="226,226,226" /> 
+
+  <element id="Player.SpectrumDefault" bg="207,211,179" />
+  <element id="Player.SpectrumDead" bg="106,108,92" />
+  <element id="Player.SpectrumLow" bg="106,108,92" />
+  <element id="Player.SpectrumMedium" bg="106,108,92" />
+  <element id="Player.SpectrumHigh" bg="81,84,67" />
+
+<!--- Search box size adjustment slider color -->
+  <element id="Controls.SearchBoxSplitter" />
 
 </colours>
 <settings>
@@ -274,24 +294,22 @@
         JCKI6r7HAAAAEElEQVQYV2O8cuXKfwYkAAAyWQN9WFdWFwAAAABJRU5ErkJggg==
   </element>
   <element id="FormBorderTop">
-        iVBORw0KGgoAAAANSUhEUgAAAAEAAAAcCAYAAACgXdXMAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A
-        /wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sLFw80LIydwFIAAAAZdEVYdENv
-        bW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAOklEQVQI122MMQrAQAzDHP//tYGMiboEele6
-        GBkLKzNxVcndLUeEDCzNjCxpAzhXYBXbS3/KG5+ruz46QDPBUFiLIAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAAUAAAAcCAIAAAAm1OLhAAAAIGNIUk0AAHolAACAgwAA+f8AAIDp
+        AAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJl
+        AFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAERJREFUKFOVyjkSgCAUBNG+/wkVFHALSD0BcX8Dypd1
+        zfAa3biNx37vlxH7NGZ9GLGbEbsYu1GN+N+MbCT77LP/aiw2AEGicBcy7jKNAAAAAElFTkSuQmCC
   </element>
   <element id="FormBorderTopLeft">
-        iVBORw0KGgoAAAANSUhEUgAAAAUAAAAcCAYAAACptnW2AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A
-        /wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sLFxArMTW7RlgAAAAZdEVYdENv
-        bW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAR0lEQVQoz7WQMQoAMAgDVfz/YwVHTfeaQSjN
-        eJwkqBEBueKZKQNW1YSqOiGApdndA5qQUMiL9u3UZJPczJbmj0lr+Pi6x/MDe/Qz7JM4tRkAAAAA
-        SUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAAUAAAAcCAIAAAAm1OLhAAAAIGNIUk0AAHolAACAgwAA+f8AAIDp
+        AAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJl
+        AFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAERJREFUKFOVyjkSgCAUBNG+/wkVFHALSD0BcX8Dypd1
+        zfAa3biNx37vlxH7NGZ9GLGbEbsYu1GN+N+MbCT77LP/aiw2AEGicBcy7jKNAAAAAElFTkSuQmCC
   </element>
   <element id="FormBorderTopRight">
-        iVBORw0KGgoAAAANSUhEUgAAAAUAAAAcCAYAAACptnW2AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A
-        /wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sLFxArMTW7RlgAAAAZdEVYdENv
-        bW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAR0lEQVQoz7WQMQoAMAgDVfz/YwVHTfeaQSjN
-        eJwkqBEBueKZKQNW1YSqOiGApdndA5qQUMiL9u3UZJPczJbmj0lr+Pi6x/MDe/Qz7JM4tRkAAAAA
-        SUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAAUAAAAcCAIAAAAm1OLhAAAAIGNIUk0AAHolAACAgwAA+f8AAIDp
+        AAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJl
+        AFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAERJREFUKFOVyjkSgCAUBNG+/wkVFHALSD0BcX8Dypd1
+        zfAa3biNx37vlxH7NGZ9GLGbEbsYu1GN+N+MbCT77LP/aiw2AEGicBcy7jKNAAAAAElFTkSuQmCC
   </element>
   <element id="FormMaximiseButton">
         iVBORw0KGgoAAAANSUhEUgAAABwAAAAPCAYAAAD3T6+hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAK
@@ -1424,7 +1442,6 @@
         YSEYDdnwdYWttdabZVvLGl6XPCi3CSAUeHXZG1vYO6TOR0l8xjpv/FQEFXN/u45W6229vb6gzP7b
         IjP1yR9mdrBY0FVj6bPe1tt6W28OkW69rbf1tt7W23pbb+ttva239bbe1tt6W2/rbb2tt/W23tbb
         eltv62291WP73wMAC6dnU3YxlN8AAAAASUVORK5CYII=
-
   </element>
 </images>
 </root>
