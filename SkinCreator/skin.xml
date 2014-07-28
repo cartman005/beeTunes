@@ -4,16 +4,16 @@
 <!-- for some elements, multiple sets of images are required, split into categories eg. the track info panel requires left, middle and right side images -->
 <!-- MusicBee can resize the player panel depending on the font used, and whether 'enlarge progress bar' is enabled and as such MusicBee stretches certain images (panel background, track info panel, progress bar). The StetchY1 and StretchY2 attributes tell MusicBee which part of the image can be stretched eg. usually you want the border area of an image to remain "sharp" and not be stretched eg. StretchY1="4" StretchY2="2" means stretch the area starting from 4px and height-2 of the image -->
 
-<root sourceSkin="Final">
+<!-- beeTunes Classic -->
+<!-- Version 9 -->
+<!-- 02/09/2014 -->
+
+<root sourceSkin="Source">
 <element id="Panel">
   <images stretchY1="1" stretchY2="0"
     default="Images\Background4.png"
   />
 </element>
-
-
-
-
 
 <element id="NextTrackButton" parent="Panel">
   <left relativeTo="Panel.Left" offset="113" />
@@ -131,7 +131,7 @@
 </element>
 
 <element id="TrackRating" parent="TrackInfoPanel">
-  <left relativeTo="TrackPosition.Left" offset="-71" />
+  <left relativeTo="TrackPosition.Left" offset="-70" />
   <top relativeTo="TrackText.VerticalCenter" offset="0" />
 </element>
 
@@ -141,7 +141,7 @@
 </element>
 
 <element id="ProgressBar" parent="TrackInfoPanel">
-  <left relativeTo="TrackInfoPanel.Left" offset="50" />
+  <left relativeTo="Spectrum.Right" offset="50" />
   <top relativeTo="TrackInfoPanel.Bottom" offset="-14" />
   <right relativeTo="TrackInfoPanel.Right" offset="-50" />
   <bottom relativeTo="TrackInfoPanel.Bottom" offset="-6" />
@@ -205,17 +205,18 @@
   <top relativeTo="Panel.VerticalCenter" offset="0" />
   <images category="Off"
     default="Images\ShuffleOff.png"
-
   />
   <images category="On"
     default="Images\ShuffleOn.png"
-
+  />
+  <images category="AutoDJ"
+     default="Images\ShuffleAutoDj.png"
   />
 </element>
 
 <!-- spectrum, love and rating can be hidden by user preference - when an element is located relative to one of these (hidden) elements, the following rules specify which element should be used instead for the relative reference -->
 <!-- the offsetAdjustment attribute enables you to tweak the offset of the dependee element eg. if TrackInfoButton depends of Spectrum with an offset of 15, when Spectrum is hidden TrackInfoButton is placed relative to TrackInfoPanel.Left with offset 8 (15-7)  using the rule below -->
-<replacementElement id="Spectrum" replaceWith="TrackInfoPanel.Left" offsetAdjustment="-7" />
+<replacementElement id="Spectrum" replaceWith="TrackInfoPanel.Left" offsetAdjustment="0" />
 <replacementElement id="TrackLove" replaceWith="TrackRating.Left" offsetAdjustment="0" />
 <replacementElement id="TrackRating" replaceWith="TrackPosition.Left" offsetAdjustment="0" />
 </root>
