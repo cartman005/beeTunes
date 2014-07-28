@@ -131,7 +131,7 @@
 </element>
 
 <element id="TrackRating" parent="TrackInfoPanel">
-  <left relativeTo="TrackPosition.Left" offset="-71" />
+  <left relativeTo="TrackPosition.Left" offset="-70" />
   <top relativeTo="TrackText.VerticalCenter" offset="0" />
 </element>
 
