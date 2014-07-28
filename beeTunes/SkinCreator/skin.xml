@@ -25,7 +25,7 @@
   <element id="MenuBarDock">right</element>
 <!-- Non-inline menubar color -->
   <element id="MenuBar.Default" bg="191,191,191" fg="0,0,0" />
-  <element id="MenuBarSeparator" bg="191,191,191" bg2="191,191,191" />
+  <element id="MenuBarSeparator" bg="240,240,240" />
   <element id="Menu.ParentItem.Highlight" bg="133,133,133" bdr="133,133,133" />
   <element id="Menu.ParentItem.Pressed" bg="103,103,103" />
 <!-- File menu vertical icon bar color -->
@@ -36,6 +36,7 @@
   <element id="Menu.DropDown.Disabled" fg="109,109,109" />
 <!-- File menu highlighted item color -->
   <element id="Menu.DropDown.Highlight" bg="209,226,242" brd="120,174,229" />
+  <element id="Menu.DropDown.HighlightText" fg="0,0,0" />
 <!-- File menu separator color -->
   <element id="Menu.DropDownSeparator" bg="215,215,215" />
 <!-- File menu checkbox background color -->
@@ -79,6 +80,8 @@
   <element id="Controls.SearchBox.Default" bg="255,255,250" fg="0,0,0" bdr="225,112,43" />
   <element id="Controls.SearchBox.Lowlight" fg="81,81,81" />
   <element id="Controls.SearchBoxSplitter" bg="191,191,191" />
+<!-- Search box border -->
+  <element id="Panel.SearchBox" bdr="191,191,191" />
   
 \\ Tabs bar
 <!-- Default location -->
@@ -97,9 +100,10 @@
   <element id="TabsBar.TabInCaptionBarTop.Default" bg="249,247,246" bg2="238,238,238" fg="73,73,73" bdr="180,180,180" />
   <element id="TabsBar.TabInCaptionOffset">0</element>
 <!-- Vertical tabs -->
-  <element id="TabsVBar.Background" bg="90,0,90" />
-  <element id="TabsBar.TabInCaptionBar.Default" bg="249,247,246" bg2="238,238,238" fg="73,73,73" />
-  <element id="TabsBar.TabInCaptionBar.Highlight"  bg="207,207,207" bg2="222,222,222" fg="73,73,73" /> 
+<!-- Separator lines between tabs -->
+  <element id="TabsVBar.Background" bg="180,180,180" />
+  <element id="TabsVBar.Tab.Default" bg="249,247,246" bg2="238,238,238" fg="73,73,73" />
+  <element id="TabsVBar.Tab.Highlight" bg="207,207,207" bg2="222,222,222" fg="73,73,73" /> 
   
 \\ Left Side Panel
 <!-- Navigator panel header color -->
@@ -123,6 +127,12 @@
   <element id="Panel.TabSelector.Highlight" bg="249,248,247" bg2="241,241,241" fg="0,0,0" bdr="180,180,180" />
   <element id="Panel.TabSelector.Lowlight" bg="133,133,133" bg2="133,133,133" />
   <element id="Controls.TabSelectedButton" bg="0,0,0" /> 
+  <element id="NowPlayingPanel.SectionHeader" bg="249,247,246" bg2="249,247,246" fg="0,0,0" />
+  <element id="NowPlayingPanel.SpectrumVisualiser" fg="179,180,182" fg2="93,94,95" />
+<!-- Playing/Selected track header -->
+  <element id="NowPlayingPanel.TabSelector.Default" bg="222,222,222" bg2="237,237,237" fg="98,98,98" /> 
+  <element id="NowPlayingPanel.TabSelector.Highlight" bg="120,120,120" />
+  <element id="NowPlayingPanel.TabSelector.Lowlight" bg="220,220,220" fg="160,160,160" />
 
 <!-- Body -->
 <!-- Library Explorer headers -->
@@ -169,6 +179,9 @@
   <element id="Content[Artwork].Body.Highlight" bg="0,0,0" /> 
   <element id="Content[Artwork].Body.Lowlight" bg="210,210,210" /> 
   <element id="Content[Artwork].HeaderControl.Default" bg="240,240,240" fg="0,0,0" bdr= "180,180,180"  />
+<!-- Color for text when text is put over artwork instead of under it -->
+  <element id="Content[Artwork].ArtworkText" bg="0,0,0" fg="255,255,255" />
+<!-- Artwork borders -->
   <element id="UseArtworkBorders">true</element>
   <element id="Controls.ArtworkFrame" bdr="110,0,0,0" /> 
 
@@ -192,6 +205,7 @@
   <element id="NowPlayingTabsBar.Tab.Highlight" bg="221,221,220" fg="73,73,73" bdr="170,170,170" /> 
 
 <!-- Scroll bar moving bar -->
+  <element id="ScrollbarNoArrows">false</element>
   <element id="Panel.ScrollBar.Default" bg="178,186,198" bg2="136,144,159" bdr="137,147,164" />
 <!-- Scroll bar arrows -->
   <element id="Panel.ScrollBarThumb.Default" bg="226,226,226" bg2="245,245,245" fg="75,75,75" />
@@ -201,7 +215,7 @@
 \\ Players
 <!-- Default (Bottom) Player -->
 <!-- Player panel background -->
-  <element id="Player.Background" bg="212,212,212" bg2="212,212,212" fg="60,60,60" bdr="212,212,212" />
+  <element id="Player.Background" bg="212,212,212" bg2="212,212,212" fg="93,94,95" bdr="212,212,212" />
 <!-- Player panel display -->
   <element id="Player.DisplayPanel" bg="212,212,212" bg2="233,236,209" fg="78,80,69" />
   <element id="Player.DisplayPanelBorder" bg="114,117,122" bg2="235,235,235" />
@@ -228,7 +242,7 @@
   <element id="Player.VolumeSlider" bg="93,94,95" bg2="93,94,95" fg="93,94,95" /> 
 
 <!-- Top Player -->
-  <element id="PlayerTop.Background" bg="228,228,228" bg2="190,190,190" fg="60,60,60" bdr="200,220,220" />
+  <element id="PlayerTop.Background" bg="228,228,228" bg2="190,190,190" bdr="190,190,190" />
   <element id="PlayerTop.DisplayPanel" bg="174,177,183" bg2="219,225,229" fg="78,80,69" />
   <element id="PlayerTop.DisplayPanelBorder" bg="114,117,122" bg2="235,235,235" />
   <element id="PlayerTop.ProgressBar" bg="134,135,135" bdr="61,61,62" />
@@ -319,8 +333,8 @@
   <element id="Compact.Player.Volume" fg="235,235,235" bdr="235,235,235" />
   <element id="Compact.Player.Wavebar" fg="93,94,95" fg2="179,180,182" />
   <element id="Compact.Player.Wavebar.Inner" fg="88,89,90" fg2="174,175,177" />
-  <element id="Compact.Player.MetroButton.Default" bg="255,55,10,200" bdr="40,200,90" />
-  <element id="Compact.Player.MetroButton.Highlight" bg="255,255,0,100" bdr="90,220,220" />
+  <element id="Compact.Player.MetroButton.Default" bg="0,0,0,0" bdr="0,0,0,0" />
+  <element id="Compact.Player.MetroButton.Highlight" bg="0,0,0,0" bdr="0,0,0,0" />
   
 \\ Menu
 <!-- Preferences --> 
@@ -330,6 +344,8 @@
   <element id="Controls.VerticalMenu.Default" bg="233,233,233" fg="0,0,0" bdr="105,105,105" /> 
   <element id="Controls.VerticalMenu.Highlight" bg="139,167,201" fg="255,255,255" /> 
   <element id="Controls.VerticalMenu.Lowlight" bg="194,199,209" fg="0,0,0" /> 
+<!-- Column headers (Hotkeys tab) -->
+  <element id="Controls.ListHeader" bg="222,222,222" bg2="237,237,237" fg="0,0,0" />
 <!-- Ellipse ... button -->
   <element id="Controls.DropdownButton.Default" bg="240,240,240" bg2="229,229,229" fg="96,96,96" bdr="172,172,172" /> 
   <element id="Controls.DropdownButton.Disabled" bg="255,255,255" bg2="255,255,255" fg="109,109,109" bdr="172,172,172" />
@@ -338,8 +354,8 @@
   <element id="Controls.InputControl.Highlight" bg="139,167,201" fg="255,255,255" />
   <element id="Controls.InputControl.Lowlight" bg="194,199,209" fg="0,0,0" />
 <!-- Used in Properties tab of Tag Editor -->
-  <element id="Controls.LockedInputControl.Default" fg="109,109,109" bg="255,255,255" bdr="0,0,0" />
-  <element id="Controls.LockedInputControl.Disabled" fg="109,109,109" bg="255,255,255" bdr="0,0,0" />
+  <element id="Controls.LockedInputControl.Default" fg="109,109,109" bg="255,255,255" bdr="112,12,112" />
+  <element id="Controls.LockedInputControl.Disabled" fg="109,109,109" bg="245,245,245" bdr="112,112,112" />
   <element id="Controls.SystemInputControl.Highlight" bg="195,22,15" fg="0,0,0" bdr="80,80,80" />
   <element id="Controls.RadioButton.Default" bg="0,0,0" fg="33,33,33" />
   <element id="Controls.RadioButton.Disabled" bg="109,109,109"  />
@@ -351,7 +367,6 @@
   <element id="Controls.SliderButton.Disabled" bg="170,170,170" fg="130,130,130" />
   
 <!-- Scroll bars -->
-  <element id="ScrollbarNoArrows">false</element>
   <element id="InputScrollBarMargin">1</element>
 <!-- Preferences scroll bar moving bar -->
   <element id="Controls.ScrollBar.Default" bg="244,244,244" bg2="192,192,196" bdr="151,151,151" /> 
@@ -373,7 +388,7 @@
   <element id="TrackInfoPanel" bg="255,255,255" fg="0,0,0" bdr= "137,140,149"  />
   <element id="ArtworkPanel" bg="240,240,240" fg="0,0,0" bdr="180,180,180"  />
 
-\\ Edit GetInfo Popup
+\\ Tag Editor Popup
   <element id="EditPanel.Default" bg="255,255,255" fg="0,0,0" bdr="172,172,172" /> 
   <element id="EditPanel.Highlight" fg="51,153,255" />
   <element id="Controls.TabHeader.Default" bg="239,239,239" fg="0,0,0" bdr="172,172,172" />
@@ -384,9 +399,11 @@
   <element id="Toolbar.Counter" bg="225,255,255" fg="0,0,0" />
   <element id="Toolbar.MenuTextOverride" fg="0,0,0" />
 <!--- Tag Editor star color -->
-  <element id="Controls.StarRating.Default" bg="255,255,255" fg="113,113,113" bdr="172,172,172" /> 
+  <element id="Controls.StarRating.Default" bg="255,255,255" fg="113,113,113" bdr="112,112,112" /> 
   <element id="Menu.CommandButton.Default" fg="0,0,0" />
   <element id="Menu.CommandButton.Selected" bg="113,113,113" fg="255,255,255" bdr="113,113,113" />
+<!-- Header when docked in main panel -->
+  <element id="TagEditorPanel.Header" bg="191,191,191" fg="0,0,0" />
 
 \\ Now Playing Popup
   <element id="NowPlayingPopup.Border" bdr="150,150,150"/>
@@ -8374,5 +8391,66 @@
         dDWIgRIQJeY4QZ5D4oFkJUMo6Z+hreSZOBfW4lp/psx2Tq3fKXiB75Mb7qUhW7kBnwfvW72F
         T1upKPBUvf/y/f8HG/tkCbBJb7AAAAAASUVORK5CYII=
   </element>
+  <element id="UnknownArtist">
+        iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6CAMAAAC/MqoPAAAAIGNIUk0AAHolAACAgwAA+f8AAIDp
+        AAB1MAAA6mAAADqYAAAXb5JfxUYAAAMAUExURcXFxcbGxsfHx8jIyMnJycrKysvLy8zMzM3Nzc7O
+        zs/Pz9DQ0NHR0dLS0tPT09TU1NXV1dbW1tfX19jY2NnZ2dra2tvb29zc3N3d3d7e3t/f3+Dg4OHh
+        4eLi4uPj4+Tk5OXl5ebm5ufn5+jo6Onp6erq6uvr6+zs7O3t7e7u7u/v7/Dw8PHx8fLy8vPz8/T0
+        9PX19fb29vf39/j4+Pn5+fr6+vv7+/z8/P39/f7+/v///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDf
+        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
+  </element>
+
 </images>
 </root>
