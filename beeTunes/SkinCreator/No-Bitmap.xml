@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <!-- beeTunes -->
-<!-- Version 2 -->
-<!-- 02/15/2014 -->
-<!-- Updated MenuButton transparency -->
+<!-- Version 3 -->
+<!-- 04/25/2014 -->
+<!-- Added Column, Thumbnail, Podcast Subscription Browser colors -->
 
 <root>
 	<variables>
@@ -30,6 +30,8 @@
 	  Spectrum-Dark="93,94,95"
 	  Spectrum-Light="235,235,235"
 	  Disabled-Text="109,109,109"
+	  List-Default="250,250,250"
+	  List-Alternating="241,244,247"
 	</variables>
 
 	<colours id="Default">
@@ -156,6 +158,10 @@
 	<!--- Makes left pane selection take up the entire pane -->
 	  <element id="FullNodeSelect">true</element>
 
+	  <element id="LeftNavigator.ScrollBar" bg="178,186,198" bg2="136,144,159" bdr="137,147,164" />
+	  <element id="LeftNavigator.ScrollBarThumb" bg="226,226,226" bg2="245,245,245" fg="75,75,75" bdr="226,226,226" />
+ 	  <element id="LeftNavigator.ScrollBarBackground" bg="226,226,226" bg2="245,245,245" />
+
 	\\ Right Side Panel  
 	<!-- Track information panel -->
 	  <element id="Sidebar.Header.Default" bg="Gray-Dark" bg2="Gray-Dark" fg="Tab-Text" bdr="Gray-Dark" />
@@ -171,6 +177,30 @@
 	  <element id="NowPlayingPanel.TabSelector.Highlight" bg="120,120,120" />
 	  <element id="NowPlayingPanel.TabSelector.Lowlight" bg="220,220,220" fg="160,160,160" />
 
+	<!-- Now playing docked on right or left -->
+	  <element id="NowPlayingList[TrackDetail].ListHeader" bg="Highlight-Tab-Bottom" bg2="237,237,237" fg="98,98,98" bdr="Highlight-Tab-Top" />
+	  <element id="NowPlayingList[TrackDetail].Default" bg="List-Default" fg="Black" bdr= "Gray-Dark" />
+	  <element id="NowPlayingList[TrackDetail].Highlight" bg="Highlight" bdr="0,0,0,0" fg="White" />
+	  <element id="NowPlayingList[TrackDetail].Lowlight"  bg="Lowlight" bdr="0,0,0,0" fg="Black" />
+	  <element id="NowPlayingList[TrackDetail].Disabled" fg="195,195,195" />
+	  <element id="NowPlayingList[TrackDetail].ListAlternating.Default" bg="List-Alternating" fg="Black" />
+	  <element id="NowPlayingList[TrackDetail].ListAlternating.Disabled" fg="195,195,195" />
+	  <element id="NowPlayingList.ScrollBar" bg="178,186,198" bg2="136,144,159" bdr="137,147,164" />
+	  <element id="NowPlayingList.ScrollBarThumb" bg="226,226,226" bg2="245,245,245" fg="75,75,75" bdr="226,226,226" />
+ 	  <element id="NowPlayingList.ScrollBarBackground" bg="226,226,226" bg2="245,245,245" />
+
+	<!-- Column browser, thumbnail browser, podcast subscriptions browser -->
+	  <element id="FilterPanel.ListHeader" bg="Highlight-Tab-Bottom" bg2="237,237,237" fg="98,98,98" bdr="Highlight-Tab-Top" />
+	  <element id="FilterPanel.Default" bg="List-Alternating" fg="Black" bdr="Gray-Dark" />
+	  <element id="FilterPanel.Highlight" bg="Highlight" bdr="0,0,0,0" fg="White" />
+	  <element id="FilterPanel.Lowlight" bg="Lowlight" bdr="0,0,0,0" fg="Black" />
+	  <element id="FilterPanel.Disabled" fg="195,195,195" />
+	  <element id="FilterPanel.ListAlternating.Default" bg="List-Default" fg="Black" />
+	  <element id="FilterPanel.ListAlternating.Disabled" fg="195,195,195" />
+	  <element id="FilterPanel.ScrollBar" bg="178,186,198" bg2="136,144,159" bdr="137,147,164" />
+	  <element id="FilterPanel.ScrollBarThumb" bg="226,226,226" bg2="245,245,245" fg="75,75,75" bdr="226,226,226" />
+ 	  <element id="FilterPanel.ScrollBarBackground" bg="226,226,226" bg2="245,245,245" />
+
 	<!-- Body -->
 	<!-- Library Explorer headers -->
 	  <element id="LibraryExplorerHeaderGap">1</element>
@@ -182,6 +212,9 @@
 	  <element id="Panel.ChildBody.Default" bg="Default-Tab-Top" fg="Black" bdr="231,234,240" />
 	  <element id="Panel.ChildBody.Highlight" bg="Sidebar-Blue" fg="White" />
 	  <element id="Panel.ChildBody.Lowlight" bg="200,204,211" bg2="200,204,211" fg="White" />
+	  <element id="Panel.ChildBody.ScrollBar" bg="178,186,198" bg2="136,144,159" bdr="137,147,164" />
+	  <element id="Panel.ChildBody.ScrollBarThumb" bg="226,226,226" bg2="245,245,245" fg="75,75,75" bdr="226,226,226" />
+ 	  <element id="Panel.ChildBody.ScrollBarBackground" bg="226,226,226" bg2="245,245,245" />
 	  <element id="LibraryExplorer.Header.Default" bg="Default-Tab-Top" bg2="Default-Tab-Top" fg="Tab-Text" />
 	  
 	  <element id="NowPlayingTabsLeftFlush">true</element> 
@@ -194,7 +227,7 @@
 	  
 	\\ Library
 	<!-- Default list color -->
-	  <element id="Content[TrackDetail].Body.Default" bg="250,250,250" fg="Black" bdr= "Gray-Dark" />
+	  <element id="Content[TrackDetail].Body.Default" bg="List-Default" fg="Black" bdr="Gray-Dark" />
 	<!-- Column headers -->
 	  <element id="Content[TrackDetail].Body.ListHeader" bg="Highlight-Tab-Bottom" bg2="237,237,237" fg="98,98,98" bdr="Highlight-Tab-Top" />
 	<!-- Focused, selected list color -->
@@ -202,11 +235,11 @@
 	<!-- Unfocused, selected list color -->
 	  <element id="Content[TrackDetail].Body.Lowlight" bg="Lowlight" fg="Black" />
 	<!-- Alternate list color -->
-	  <element id="Content[TrackDetail].ListAlternating.Default" bg="241,244,247" fg="Black" />
+	  <element id="Content[TrackDetail].ListAlternating.Default" bg="List-Alternating" fg="Black" />
 	<!-- Missing track color 1 -->
-	  <element id="Content[TrackDetail].Body.Disabled" bg="241,244,247" fg="195,195,195" />
+	  <element id="Content[TrackDetail].Body.Disabled" bg="List-Alternating" fg="195,195,195" />
 	<!-- Missing track color 2 -->
-	  <element id="Content[TrackDetail].ListAlternating.Disabled" bg="241,244,247" fg="195,195,195" />
+	  <element id="Content[TrackDetail].ListAlternating.Disabled" bg="List-Alternating" fg="195,195,195" />
 
 	  <element id="Content[AlbumAndTracks].ArtistSplitterLine" bg="Toolbar-White"/>
 	  
@@ -361,7 +394,7 @@
 
 	<!-- Compact player -->
 	  <element id="Compact.LeftPanel" bg="204,204,204" />
-	  <element id="Compact.RightPanel.Default" bg="250,250,250" fg="Black" />
+	  <element id="Compact.RightPanel.Default" bg="List-Default" fg="Black" />
 	  <element id="Compact.RightPanel.Disabled" bg="255,0,0" fg="200,200,200" />
 	  <element id="Compact.RightPanel.Highlight" bg="Highlight" fg="White" />
 	  <element id="Compact.RightPanel.Lowlight" bg="Lowlight" fg="Black" />
@@ -1003,21 +1036,17 @@
 			Z9yff7DpIfph4SOpR+WPlR7X/aj3Y+uI5ciZUdfRvidBTx6Mscae/5T+04fx/Kfkp+UTqhONk2aT
 			p6fcp24+W/1s/Hnq8/npgp+lf65+ofviu18cf+mbWTUz/pL/cuHX4lfyr468Xva6e9Z/9vGb5Dfz
 			c4Vv5d8efcd41/s+7P3EfOYH7IeKj3ofuz55f3q4kLyw8Bv3hPP74uYdwgAAAAlwSFlzAAAOwwAA
-			DsMBx2+oZAAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAADAklEQVQ4T2N4
-			zFDAhA0vnjXPdOGChV8PJSz9+Uhq3ov7YouqfBhU2dDV4TRg/tx59yf29c95ZjLl69eZh/+/0p38
-			XJKBRwhdHVYDpk2Y7Dd75qwfQgycUq+cps1/k7Xk/+PAmdtAfHS1YAPWrlzduWTR4vvLli57uGXj
-			pp0zp8+4M23y1JMgG7kZ2Gwy0jOe1NfX35k/Z+7exQsXPVw4f8H95YuXdoINWF82iaOjrf3/grnz
-			pgIVTFy2eMnxif0T/vb19P5btXLV46VLljzt6uj8B+T/ndDbf2LOzFkT586aPbWpofH/moRWTpAL
-			mIEG/Jra1e8KYsP4PV3dT3q7e/62Nrf8nTNr9tP21rafMHmQ2qqKyl8gNtiA9qbWuubGptcg9toV
-			q0Hs/031jSuWRtZxrktq55w+ZdqGtpbW/5vXbagDqQGprSgqBbPBBoBwdWXVQaDEe6CtryvLK/7D
-			xIGYZUNYM1d9bd1/oNdeAwP3fXlp2UGYPNyAyRMmHSwpKv6Qn5v3ujC/AMWAtUH1XBVl5f+zMjJf
-			A/3+ARgWCAOUGQSFqysqZ5cWlzxOZDBgz0xOqysqKPxfXFi0dFpspcDk6HKB8uLSdUDD/8dHRNeD
-			NDXU1T+c1D9hItiAi6LLJt6Qm/P/mOrClSDDQIKZ6Rm/01PTnqYmJf/Lzsz6l5ud8wJo6M9CBgsO
-			PQZxkdTYRL+kxMTfIAsZXupMegNKaU/1Jn5NiImbkJOVvT8pIfFvRGjYv7DgkKvREZFXoQb9SUlI
-			OrzDYMape9Lzvs4xbPkf5OipwfDGbfrE1+mLvq3zqfnq7+v3Mio84mBIUPCjQD//o0DXsIBwYlz8
-			zbjomGveHp4n7uv1/gVZ+ER3wjdJBl5pBlBqAyVREA3LLH4e3hHBgUHfQGwQjo6M+hEXEe0HUgOy
-			8GP60lcgGsQHJ2VsOCgg8DnQG62xUdFTQ4ND7oPEQBagW4hiQDSDLitQUpKHgU3VWM8g3tPd46e7
-			q9tPU0PjOG4GVh0+BnYF1CxdwAQAAVbBqrn1XucAAAAASUVORK5CYII=
+			DsMBx2+oZAAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAACCklEQVQ4T6WS
+			yYoacRDG2xkJc+pR3LXdEFdEReMWcUFFlBZRBNGjoAh9Gp8iOeYdfII8wjxFYCB7ApNAJskx5FCp
+			rzI2I+Q2hw+lll/VV/9WPilXZ48RANbHyNwgrkXKIS34wu/3X3u93i8ej+c3hP+IIYeaYz3LAgFg
+			4aQRiUTe1ut1ms1mtN1uaTqdUq1Wo0KhQMlkknw+HzHsDWqPzSaAJ93wFMrn85TNZqlUKtHhcBAh
+			pmkaIa+qKiA3/wN8iMVi1Gq1qN/v02AwoG63S+PxmPb7PRmGQavVSjZiwM+oFn56AnA6nS8DgcBt
+			Op2mcrlMzWaTOp2O/E4mEwFik2AwSDwMdkwrArhQrJrdbn/udrtxNPGLQgirh8Nhaea8xGw2m2nF
+			PGIoFHqPJG8id8jlcjIVajQatF6vabfb0WazodFoBMA7E8CNckR+CTlYJpMhvMhwOKT5fE6LxUJe
+			ZrlcSpw3uoVtE8C07zhitVqVyfF4nHgj2QaWIIBhBTZt6qUB2yaAgz+wASZXKhV5jeMRe72eWEil
+			UuLf4XD8sikXKvpMgMvl+oxp0WhUpgCGYgjHw0bFYlGgXPvx2GwC4IebviYSCfny2u026bou/nE8
+			fAOI8YBvR+8nAPiBL6a/Yr+vefId68+97hBD7qH3EwAEX0+U87hVOXt2rlh01uJeOmLIPfT+T1eW
+			v9AQUi/PttvRAAAAAElFTkSuQmCC
 		</element>
 		<element id="PlaylistAutoDjIcon">
 			iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGOfPtRkwAAACBjSFJN
@@ -1068,17 +1097,21 @@
 			Z9yff7DpIfph4SOpR+WPlR7X/aj3Y+uI5ciZUdfRvidBTx6Mscae/5T+04fx/Kfkp+UTqhONk2aT
 			p6fcp24+W/1s/Hnq8/npgp+lf65+ofviu18cf+mbWTUz/pL/cuHX4lfyr468Xva6e9Z/9vGb5Dfz
 			c4Vv5d8efcd41/s+7P3EfOYH7IeKj3ofuz55f3q4kLyw8Bv3hPP74uYdwgAAAAlwSFlzAAAOwwAA
-			DsMBx2+oZAAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAACCklEQVQ4T6WS
-			yYoacRDG2xkJc+pR3LXdEFdEReMWcUFFlBZRBNGjoAh9Gp8iOeYdfII8wjxFYCB7ApNAJskx5FCp
-			rzI2I+Q2hw+lll/VV/9WPilXZ48RANbHyNwgrkXKIS34wu/3X3u93i8ej+c3hP+IIYeaYz3LAgFg
-			4aQRiUTe1ut1ms1mtN1uaTqdUq1Wo0KhQMlkknw+HzHsDWqPzSaAJ93wFMrn85TNZqlUKtHhcBAh
-			pmkaIa+qKiA3/wN8iMVi1Gq1qN/v02AwoG63S+PxmPb7PRmGQavVSjZiwM+oFn56AnA6nS8DgcBt
-			Op2mcrlMzWaTOp2O/E4mEwFik2AwSDwMdkwrArhQrJrdbn/udrtxNPGLQgirh8Nhaea8xGw2m2nF
-			PGIoFHqPJG8id8jlcjIVajQatF6vabfb0WazodFoBMA7E8CNckR+CTlYJpMhvMhwOKT5fE6LxUJe
-			ZrlcSpw3uoVtE8C07zhitVqVyfF4nHgj2QaWIIBhBTZt6qUB2yaAgz+wASZXKhV5jeMRe72eWEil
-			UuLf4XD8sikXKvpMgMvl+oxp0WhUpgCGYgjHw0bFYlGgXPvx2GwC4IebviYSCfny2u026bou/nE8
-			fAOI8YBvR+8nAPiBL6a/Yr+vefId68+97hBD7qH3EwAEX0+U87hVOXt2rlh01uJeOmLIPfT+T1eW
-			v9AQUi/PttvRAAAAAElFTkSuQmCC
+			DsMBx2+oZAAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAADAklEQVQ4T2N4
+			zFDAhA0vnjXPdOGChV8PJSz9+Uhq3ov7YouqfBhU2dDV4TRg/tx59yf29c95ZjLl69eZh/+/0p38
+			XJKBRwhdHVYDpk2Y7Dd75qwfQgycUq+cps1/k7Xk/+PAmdtAfHS1YAPWrlzduWTR4vvLli57uGXj
+			pp0zp8+4M23y1JMgG7kZ2Gwy0jOe1NfX35k/Z+7exQsXPVw4f8H95YuXdoINWF82iaOjrf3/grnz
+			pgIVTFy2eMnxif0T/vb19P5btXLV46VLljzt6uj8B+T/ndDbf2LOzFkT586aPbWpofH/moRWTpAL
+			mIEG/Jra1e8KYsP4PV3dT3q7e/62Nrf8nTNr9tP21rafMHmQ2qqKyl8gNtiA9qbWuubGptcg9toV
+			q0Hs/031jSuWRtZxrktq55w+ZdqGtpbW/5vXbagDqQGprSgqBbPBBoBwdWXVQaDEe6CtryvLK/7D
+			xIGYZUNYM1d9bd1/oNdeAwP3fXlp2UGYPNyAyRMmHSwpKv6Qn5v3ujC/AMWAtUH1XBVl5f+zMjJf
+			A/3+ARgWCAOUGQSFqysqZ5cWlzxOZDBgz0xOqysqKPxfXFi0dFpspcDk6HKB8uLSdUDD/8dHRNeD
+			NDXU1T+c1D9hItiAi6LLJt6Qm/P/mOrClSDDQIKZ6Rm/01PTnqYmJf/Lzsz6l5ud8wJo6M9CBgsO
+			PQZxkdTYRL+kxMTfIAsZXupMegNKaU/1Jn5NiImbkJOVvT8pIfFvRGjYv7DgkKvREZFXoQb9SUlI
+			OrzDYMape9Lzvs4xbPkf5OipwfDGbfrE1+mLvq3zqfnq7+v3Mio84mBIUPCjQD//o0DXsIBwYlz8
+			zbjomGveHp4n7uv1/gVZ+ER3wjdJBl5pBlBqAyVREA3LLH4e3hHBgUHfQGwQjo6M+hEXEe0HUgOy
+			8GP60lcgGsQHJ2VsOCgg8DnQG62xUdFTQ4ND7oPEQBagW4hiQDSDLitQUpKHgU3VWM8g3tPd46e7
+			q9tPU0PjOG4GVh0+BnYF1CxdwAQAAVbBqrn1XucAAAAASUVORK5CYII=
 		</element>
 		<element id="PlaylistIcon">
 			iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGOfPtRkwAAACBjSFJN
