@@ -1,0 +1,5 @@
+<element id="Content[TrackDetail].Body.Default" bg="182,37,70" fg="0,0,0" bdr= "220,220,220" /> - Regular list color
+<element id="Content[TrackDetail].Body.Highlight" bg="169,212,255" fg="0,0,0" /> - Focused highlighted row color
+<element id="Content[TrackDetail].Body.Lowlight" bg="210,210,210" fg="0,0,0" /> - Unfocused highlighed row color
+<element id="Content[TrackDetail].ListAlternating.Default" bg="255,201,14" fg="0,0,0" /> - Alternating list color
+<element id="Content[TrackDetail].ListAlternating.Disabled" bg="242,245,249" fg="0,0,0" /> - Now Playing list color?
