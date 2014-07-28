@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- beeTunes Classic -->
+<!-- Version 9 -->
+<!-- 02/09/2014 -->
+
 <root>
 <colours id="Default">
 <!--- Application title name -->
@@ -11,9 +16,14 @@
   <element id="ApplicationBackColour" bg="212,212,212" /> 
   <element id="WindowBackColour" bg="212,212,212" />
 
+  <element id="PlayerSplitProgressYOffset">0</element>
 
 <!--- Hide menu when docked at top -->
   <element id="AutoHideMenu">false</element>
+
+<!-- Color when menu bar is displayed as a button -->
+  <element id="MenuButton.Default" bg="228,228,228" bg2="219,219,219" fg="0,0,0" brd="0,0,0,0" />
+  <element id="MenuButton.Border" bg="0,227,227,227" />
 
 
 <!--- Non-inline menubar color -->
@@ -129,7 +139,7 @@
   <element id="TrackInfoPanel" bg="255,255,255" fg="0,0,0" bdr= "137,140,149"  />
   <element id="ArtworkPanel" bg="240,240,240" fg="0,0,0" bdr="180,180,180"  />
 
-<!--- Centers track info text -->
+<!--- Centers track info text alignment -->
   <element id="PlayerInfoCentered">true</element>
 <!--- Makes left pane selection take up the entire pane -->
   <element id="FullNodeSelect">true</element>
@@ -216,6 +226,8 @@
   <element id="Player.SpectrumLow" bg="106,108,92" />
   <element id="Player.SpectrumMedium" bg="106,108,92" />
   <element id="Player.SpectrumHigh" bg="81,84,67" />
+
+  <element id="NowPlayingPanel.SectionHeader" bg="220,220,220" />
 
 <!--- Search box size adjustment slider color -->
   <element id="Controls.SearchBoxSplitter" />

@@ -1,0 +1,200 @@
+id=DefaultIconName,hash=-171003702
+id=TitlebarActiveForeColour,hash=642361635
+id=TitlebarInactiveForeColour,hash=-35329384
+id=ApplicationBackColour,hash=-35660577
+id=WindowBackColour,hash=-790249177
+id=PlayerSplitProgressYOffset,hash=512591286
+id=AutoHideMenu,hash=-141549421
+id=MenuButton.Default,hash=-513307714
+id=MenuButton.Border,hash=-1696672775
+id=MenuBar.Default,hash=415729634
+id=MenuBarSeparator,hash=-1233618
+id=Menu.ParentItem.Highlight,hash=1506082618
+id=Menu.ParentItem.Pressed,hash=1832301390
+id=Menu.DropDownMargin,hash=427212835
+id=Menu.DropDown.Default,hash=1278778846
+id=Menu.DropDown.Disabled,hash=-939614623
+id=Menu.DropDown.Highlight,hash=66731100
+id=Menu.DropDownSeparator,hash=1067992713
+id=Menu.DropDownCheckBox.Default,hash=-653737108
+id=Menu.DropDownCheckBoxBorder.Default,hash=-529536699
+id=Menu.DropDownCheckBox.Highlight,hash=-289653438
+id=Menu.DropDownCheckBoxBorder.Highlight,hash=-1697670355
+id=MainPanelSeparatorMargin,hash=1472580081
+id=MainPanelMargin.Left,hash=481567871
+id=MainPanelMargin.Right,hash=-251487655
+id=MainPanelMargin.Top,hash=-1865682527
+id=MainPanelMargin.Bottom,hash=-612324223
+id=ScrollBarMargin,hash=1680088117
+id=MenuBarDock,hash=-1389504848
+id=InlineMenuBar.Default,hash=1489013162
+id=InlineMenu.ParentItem.Highlight,hash=-1073094901
+id=InlineMenu.ParentItem.Pressed,hash=-1324833660
+id=MainPanelTopBorder,hash=461515725
+id=Panel.Header.Default,hash=279268961
+id=Panel.HeaderControl.Default,hash=-1886022506
+id=Panel.HeaderControl.Highlight,hash=1380498375
+id=Panel.Body.Default,hash=-1127744885
+id=Panel.Body.Highlight,hash=2117206110
+id=Panel.Body.Lowlight,hash=1226065674
+id=Panel.SubHeader.Default,hash=1128738468
+id=Panel.TabSelector.Default,hash=-214584038
+id=Panel.TabSlelector.Highlight,hash=-814028370
+id=Panel.TabSelector.Lowlight,hash=-1951105063
+id=Controls.TabSelectedButton,hash=1507968930
+id=Panel.SectionHeader.Default,hash=-262466487
+id=InputPanel.Default,hash=1033908931
+id=InputPanel.Highlight,hash=-1287843368
+id=Controls.InputControl.Default,hash=1299922867
+id=Panel.ChildHeader.Default,hash=1039396355
+id=Panel.ChildHeaderControl.Default,hash=-784498979
+id=Panel.ChildHeaderControl.Highlight,hash=-1717025043
+id=Panel.ChildBody.Default,hash=-1321724196
+id=Panel.ChildBody.Highlight,hash=-589868747
+id=Panel.ChildBody.Lowlight,hash=-675187223
+id=Panel.StatusBar.Default,hash=1800360169
+id=Panel.StatusBarControl.Default,hash=-1508313755
+id=Panel.StatusBarControl.Highlight,hash=-900270400
+id=Panel.StarRating.Default,hash=1289952621
+id=Panel.StarRating.Highlight,hash=-170581859
+id=Panel.StarRating.Lowlight,hash=450862885
+id=TabsBar.Background,hash=516701667
+id=TabsBar.Tab.Default,hash=1731383843
+id=TabsBar.Tab.Highlight,hash=-1099919823
+id=TabsBar.DropCursor,hash=347458317
+id=Content[TrackDetail].Body.Default,hash=1502884812
+id=Content[TrackDetail].Body.ListHeader,hash=1966238215
+id=Content[TrackDetail].Body.Highlight,hash=1674118020
+id=Content[TrackDetail].Body.Lowlight,hash=-933729579
+id=Content[TrackDetail].ListAlternating.Default,hash=-860042142
+id=Content[TrackDetail].Body.Disabled,hash=-121155685
+id=Content[TrackDetail].ListAlternating.Disabled,hash=1602301005
+id=Content[Artwork],hash=776855210
+id=Content[Artwork].Body.Default,hash=-1555306140
+id=Content[Artwork].Body.Highlight,hash=-385326472
+id=Content[Artwork].Body.Lowlight,hash=-1380574261
+id=Content[Artwork].HeaderControl.Default,hash=-1406296287
+id=Content[ArtistProfile],hash=2091708299
+id=LyricsPanel,hash=-102595726
+id=TrackInfoPanel,hash=937209355
+id=ArtworkPanel,hash=355898194
+id=PlayerInfoCentered,hash=2035508615
+id=FullNodeSelect,hash=2080905846
+id=Content[AlbumAndTracks].ArtistSplitterLine,hash=1466812036
+id=Toolbar.Background,hash=54555353
+id=Toolbar.Counter,hash=-1350051088
+id=Player.Background,hash=-1013849876
+id=Player.DisplayPanel,hash=1127544461
+id=Player.ProgressBar,hash=789558653
+id=Controls.Counter,hash=-1836726102
+id=Controls.TabHeader.Default,hash=323589230
+id=Controls.TabHeader.Highlight,hash=-1382727689
+id=Controls.TabHeader.Lowlight,hash=-195782889
+id=Controls.DropdownButton.Default,hash=1509018876
+id=Controls.DropdownButton.Disabled,hash=1981572331
+id=Controls.ScrollBar.Default,hash=665396152
+id=Controls.ScrollBarThumb.Default,hash=1402194620
+id=Controls.ScrollBarBackground.Default,hash=1817408247
+id=Panel.ScrollBar.Default,hash=-713878242
+id=Panel.ScrollBarThumb.Default,hash=-96905193
+id=Panel.ScrollBarBackground.Default,hash=1594109793
+id=Player.StarRating.Default,hash=-811526649
+id=Player.StarRating.Lowlight,hash=-1411237968
+id=NowPlayingPopup.Border,hash=-2076578551
+id=NowPlayingPopup.Body,hash=1925706246
+id=Controls.StarRating.Default,hash=1109605343
+id=Controls.VerticalMenu.Default,hash=1058835523
+id=Controls.VerticalMenu.Highlight,hash=668395143
+id=Controls.VerticalMenu.Lowlight,hash=-2127997214
+id=Controls.ArtworkFrame,hash=1312228732
+id=Controls.FaintLine,hash=-542863183
+id=Controls.SliderLine.Default,hash=527406995
+id=Controls.SliderLine.Disabled,hash=871078944
+id=Controls.SliderButton.Default,hash=-996507976
+id=Controls.SliderButton.Disabled,hash=391582139
+id=PlayerSidebar.Background,hash=431369991
+id=PlayerSidebar.Control.Default,hash=-1381143577
+id=PlayerSidebar.Control.Disabled,hash=-260275644
+id=PlayerSidebar.Control.Highlight,hash=-239257401
+id=PlayerSidebar.Volume,hash=-1410451005
+id=PlayerSidebar.VolumeButton,hash=-1031812297
+id=PlayerSidebar.ProgressBar,hash=-1426442478
+id=Panel.ChildHeaderPlayerControl.Default,hash=415487888
+id=Panel.ChildHeaderPlayerControl.Disabled,hash=292077184
+id=Panel.ChildHeaderPlayerControl.Highlight,hash=-316002286
+id=MiniPlayer.StarRating.Default,hash=-703509455
+id=MiniPlayer.StarRating.Lowlight,hash=-32533758
+id=NavigatorPanel.Body.Default,hash=1247805037
+id=Controls.TabHeader.Default,hash=323589230
+id=Controls.TabHeader.Highlight,hash=-1382727689
+id=Controls.TabHeader.Lowlight,hash=-195782889
+id=Panel.NotLovedIcon.Highlight,hash=2054594730
+id=Panel.NotLovedIcon.Lowlight,hash=2031267230
+id=Player.SpectrumDefault,hash=1725314091
+id=Player.SpectrumDead,hash=-1114122467
+id=Player.SpectrumLow,hash=1512779771
+id=Player.SpectrumMedium,hash=-1649045678
+id=Player.SpectrumHigh,hash=-1108058155
+id=NowPlayingPanel.SectionHeader,hash=-81170906
+id=Controls.SearchBoxSplitter,hash=-489636158
+id=UseNativeButtonTheme,hash=-545041604
+id=UseSystemColors,hash=976337283
+id=MusicLibrary,hash=558083821,bitmap len=3067
+id=BookmarksIcon,hash=-1619180584
+id=PodcastsIcon,hash=-1204589671
+id=RadioIcon,hash=-1708333759
+id=AudiobooksIcon,hash=-662801112
+id=VideoIcon,hash=-1675569859
+id=InboxIcon,hash=187421471
+id=PlayHistoryIcon,hash=507454711
+id=DownloadsIcon,hash=-289251734
+id=PlaylistNowPlayingIcon,hash=-227740274
+id=PlaylistAutoDjIcon,hash=246813575
+id=PlaylistIcon,hash=-1108012255
+id=PlaylistAutoIcon,hash=-721226683
+id=PlaylistMixerIcon,hash=-1990086960
+id=UpcomingReleasesIcon,hash=-1915061455
+id=WaitIndicator,hash=685456220,bitmap len=1849
+id=InProgressIndicator,hash=-2125520935,bitmap len=847
+id=FormBorderBottom,hash=600796000,bitmap len=162
+id=FormBorderBottomLeft,hash=417864278,bitmap len=167
+id=FormBorderBottomRight,hash=32512621,bitmap len=167
+id=FormBorderLeft,hash=1247246715,bitmap len=160
+id=FormBorderRight,hash=1652300762,bitmap len=160
+id=FormBorderTop,hash=2043008185,bitmap len=228
+id=FormBorderTopLeft,hash=294702731,bitmap len=228
+id=FormBorderTopRight,hash=680370427,bitmap len=228
+id=FormMaximiseButton,hash=1289881645,bitmap len=2963
+id=FormMinimiseButton,hash=107356311,bitmap len=2856
+id=FormRestoreButton,hash=1865602263,bitmap len=3055
+id=FormHelpButton,hash=-1711945127,bitmap len=3089
+id=FormCloseButton,hash=-729753283,bitmap len=3156
+id=FormHelpHighlightButton,hash=-1341048544,bitmap len=3018
+id=FormMinimiseHighlightButton,hash=-838161554,bitmap len=2859
+id=FormMaximiseHighlightButton,hash=-100845625,bitmap len=2948
+id=FormRestoreHighlightButton,hash=1930140599,bitmap len=2999
+id=FormCloseHighlightButton,hash=-1035803836,bitmap len=3057
+id=AzJump,hash=960882802,bitmap len=960
+id=MiniPlayerLastFmLoveBright,hash=-535312797,bitmap len=263
+id=MiniPlayerLastFmNotLove,hash=-1843638382,bitmap len=263
+id=NoArtwork,hash=-888402318,bitmap len=30869
+player panel
+id=Panel,enum=0
+id=NextTrackButton,enum=3
+id=PrevTrackButton,enum=1
+id=StopTrackButton,enum=4
+id=PlayPauseButton,enum=2
+id=Speaker,enum=5
+id=VolumeSlidebar,enum=6
+id=TrackInfoPanel,enum=8
+id=Spectrum,enum=9
+id=TrackInfoButton,enum=10
+id=TrackText,enum=11
+id=TrackLove,enum=12
+id=TrackRating,enum=13
+id=TrackPosition,enum=14
+id=ProgressBar,enum=15
+id=EqualiserButton,enum=16
+id=LastFmButton,enum=17
+id=RepeatButton,enum=18
+id=ShuffleButton,enum=19
