@@ -40,11 +40,15 @@ id=Panel.CommandIconOverride,hash=-324380038
 id=Panel.HeaderButtonOverride.Default,hash=-1259481447
 id=Panel.HeaderButtonOverride.Disabled,hash=-9730090
 id=Panel.HeaderButtonOverride.Highlight,hash=1510603682
+id=CaptionBar.CommandButtonOverride,hash=-1375236156
+id=CaptionBar.CommandIconOverride,hash=440065357
 id=Panel.SubHeader.Default,hash=1128738468
 id=Controls.SearchBox.Default,hash=-1081090488
 id=Controls.SearchBox.Lowlight,hash=551864024
 id=Controls.SearchBoxSplitter,hash=-489636158
 id=Panel.SearchBox,hash=978388434
+id=CaptionBar.SearchBox.Default,hash=549790950
+id=CaptionBar.SearchBox.Lowlight,hash=-1569109829
 id=TabsBar.Background,hash=516701667
 id=TabsBar.Tab.Default,hash=1731383843
 id=TabsBar.Tab.Highlight,hash=-1099919823
@@ -53,10 +57,17 @@ id=TabsBar.JoinLine,hash=-831542714
 id=BottomTabsBar.JoinLine,hash=-133136592
 id=TabsBar.TabCloseButton.Highlight,hash=-178200281
 id=TabsBar.TabCloseButton.Lowlight,hash=-2068291046
+id=TabsBarBelow.Tab.Default,hash=-79204418
+id=TabsBarBelow.Tab.Highlight,hash=-1856926951
+id=TabsBarBelow.TabCloseButton.Highlight,hash=326569898
+id=TabsBarBelow.TabCloseButton.Lowlight,hash=458431899
+id=TabsBar.TabInCaptionOffset,hash=-2007086533
 id=TabsBar.TabInCaptionBar.Default,hash=30873937
 id=TabsBar.TabInCaptionBar.Highlight,hash=-1842170377
 id=TabsBar.TabInCaptionBarTop.Default,hash=1340175665
-id=TabsBar.TabInCaptionOffset,hash=-2007086533
+id=TabsBar.TabInCaptionBarTop.Highlight,hash=-1539499056
+id=TabsBarBelow.Tab.Default,hash=-79204418
+id=TabsBarBelow.Tab.Highlight,hash=-1856926951
 id=TabsVBar.Background,hash=-1968022355
 id=TabsVBar.Tab.Default,hash=-755280519
 id=TabsVBar.Tab.Highlight,hash=-396278586
@@ -69,6 +80,23 @@ id=FullNodeSelect,hash=2080905846
 id=LeftNavigator.ScrollBar,hash=716884152
 id=LeftNavigator.ScrollBarThumb,hash=-172080681
 id=LeftNavigator.ScrollBarBackground,hash=-978127553
+id=LibraryExplorerHeaderGap,hash=635913676
+id=Panel.ChildHeader.Default,hash=1039396355
+id=Panel.ChildHeaderControl.Default,hash=-784498979
+id=Panel.ChildHeaderControl.Highlight,hash=-1717025043
+id=Panel.ChildHeaderControlWithTabs.Highlight,hash=820394347
+id=Panel.ChildBody.Default,hash=-1321724196
+id=Panel.ChildBody.Highlight,hash=-589868747
+id=Panel.ChildBody.Lowlight,hash=-675187223
+id=Panel.ChildBody.ScrollBar,hash=610710186
+id=Panel.ChildBody.ScrollBarThumb,hash=1045201006
+id=Panel.ChildBody.ScrollBarBackground,hash=1317175031
+id=LibraryExplorer.Header.Default,hash=-1867740489
+id=NowPlayingTabsLeftFlush,hash=-1563701826
+id=NowPlayingTabsSpacing,hash=-1869174083
+id=Panel.StatusBar.Default,hash=1800360169
+id=Panel.StatusBarControl.Default,hash=-1508313755
+id=Panel.StatusBarControl.Highlight,hash=-900270400
 id=Sidebar.Header.Default,hash=1404028176
 id=Panel.TabSelector.Default,hash=-214584038
 id=Panel.TabSelector.Highlight,hash=-1525478667
@@ -99,23 +127,12 @@ id=FilterPanel.ListAlternating.Disabled,hash=1814828149
 id=FilterPanel.ScrollBar,hash=-824402133
 id=FilterPanel.ScrollBarThumb,hash=1681079883
 id=FilterPanel.ScrollBarBackground,hash=1821947177
-id=LibraryExplorerHeaderGap,hash=635913676
-id=Panel.ChildHeader.Default,hash=1039396355
-id=Panel.ChildHeaderControl.Default,hash=-784498979
-id=Panel.ChildHeaderControl.Highlight,hash=-1717025043
-id=Panel.ChildHeaderControlWithTabs.Highlight,hash=820394347
-id=Panel.ChildBody.Default,hash=-1321724196
-id=Panel.ChildBody.Highlight,hash=-589868747
-id=Panel.ChildBody.Lowlight,hash=-675187223
-id=Panel.ChildBody.ScrollBar,hash=610710186
-id=Panel.ChildBody.ScrollBarThumb,hash=1045201006
-id=Panel.ChildBody.ScrollBarBackground,hash=1317175031
-id=LibraryExplorer.Header.Default,hash=-1867740489
-id=NowPlayingTabsLeftFlush,hash=-1563701826
-id=NowPlayingTabsSpacing,hash=-1869174083
-id=Panel.StatusBar.Default,hash=1800360169
-id=Panel.StatusBarControl.Default,hash=-1508313755
-id=Panel.StatusBarControl.Highlight,hash=-900270400
+id=LyricsPanel,hash=-102595726
+id=TrackInfoPanel,hash=937209355
+id=TrackInfoPanel.ScrollBar,hash=-876189489
+id=TrackInfoPanel.ScrollBarThumb,hash=365902169
+id=TrackInfoPanel.ScrollBarBackground,hash=1387973856
+id=ArtworkPanel,hash=355898194
 id=Content[TrackDetail].Body.Default,hash=1502884812
 id=Content[TrackDetail].Body.ListHeader,hash=1966238215
 id=Content[TrackDetail].Body.Highlight,hash=1674118020
@@ -283,9 +300,6 @@ id=AutoDjPanel.Default,hash=-1826647809
 id=Controls.ProgressBar,hash=101213145
 id=Controls.ProgressBarButton,hash=1946504079
 id=Controls.ProgressBarContainer,hash=1824562732
-id=LyricsPanel,hash=-102595726
-id=TrackInfoPanel,hash=937209355
-id=ArtworkPanel,hash=355898194
 id=EditPanel.Default,hash=1217133243
 id=EditPanel.Highlight,hash=-181223496
 id=Controls.TabHeader.Default,hash=323589230
@@ -313,6 +327,7 @@ id=Panel.ChildHeader.HeightAdjustment,hash=-414518347
 id=UseRoundedWindowBorders,hash=-946545310
 id=UseSquareCaptionBorders,hash=-178392876
 id=ClassicNewTabButton,hash=2012654938
+id=UseSquareTabCorners,hash=-1378515669
 id=MusicLibrary,hash=558083821,bitmap len=3229
 id=BookmarksIcon,hash=-1619180584
 id=PodcastsIcon,hash=-1204589671
@@ -359,7 +374,7 @@ id=MiniPlayerLastFmLoveBright,hash=-535312797,bitmap len=263
 id=MiniPlayerLastFmNotLove,hash=-1843638382,bitmap len=263
 id=CheckTick,hash=-663114390,bitmap len=2969
 id=CheckTickDisabled,hash=1513069963,bitmap len=2905
-id=NoArtwork,hash=-888402318,bitmap len=362210
+id=NoArtwork,hash=-888402318,bitmap len=117473
 id=UnknownArtist,hash=-1744040843
 player panel
 id=Panel,enum=0

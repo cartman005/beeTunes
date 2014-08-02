@@ -177,7 +177,7 @@ id=FormCloseHighlightButton,hash=-1035803836,bitmap len=3057
 id=AzJump,hash=960882802,bitmap len=960
 id=MiniPlayerLastFmLoveBright,hash=-535312797,bitmap len=263
 id=MiniPlayerLastFmNotLove,hash=-1843638382,bitmap len=263
-id=NoArtwork,hash=-888402318,bitmap len=30869
+id=NoArtwork,hash=-888402318,bitmap len=44879
 player panel
 id=Panel,enum=0
 id=NextTrackButton,enum=3

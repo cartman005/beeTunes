@@ -5,10 +5,11 @@
 <!-- MusicBee can resize the player panel depending on the font used, and whether 'enlarge progress bar' is enabled and as such MusicBee stretches certain images (panel background, track info panel, progress bar). The StetchY1 and StretchY2 attributes tell MusicBee which part of the image can be stretched eg. usually you want the border area of an image to remain "sharp" and not be stretched eg. StretchY1="4" StretchY2="2" means stretch the area starting from 4px and height-2 of the image -->
 
 <!-- beeTunes -->
-<!-- Version 3 -->
-<!-- 04/25/2014 -->
 
-<root sourceSkin="No-Bitmap">
+<!-- Version 4 -->
+<!-- 07/31/2014 -->
+
+<root sourceSkin="beeTunes (No Bitmap)">
 	<element id="Panel">
 		<images stretchY1="1" stretchY2="0"
 			default="Images\Background.png"
