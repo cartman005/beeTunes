@@ -92,8 +92,6 @@ id=Panel.ChildBody.ScrollBar,hash=610710186
 id=Panel.ChildBody.ScrollBarThumb,hash=1045201006
 id=Panel.ChildBody.ScrollBarBackground,hash=1317175031
 id=LibraryExplorer.Header.Default,hash=-1867740489
-id=NowPlayingTabsLeftFlush,hash=-1563701826
-id=NowPlayingTabsSpacing,hash=-1869174083
 id=Panel.StatusBar.Default,hash=1800360169
 id=Panel.StatusBarControl.Default,hash=-1508313755
 id=Panel.StatusBarControl.Highlight,hash=-900270400
@@ -328,6 +326,9 @@ id=UseRoundedWindowBorders,hash=-946545310
 id=UseSquareCaptionBorders,hash=-178392876
 id=ClassicNewTabButton,hash=2012654938
 id=UseSquareTabCorners,hash=-1378515669
+id=NowPlayingTabsLeftFlush,hash=-1563701826
+id=NowPlayingTabsLeftOffset,hash=321437935
+id=NowPlayingTabsSpacing,hash=-1869174083
 id=MusicLibrary,hash=558083821,bitmap len=3229
 id=BookmarksIcon,hash=-1619180584
 id=PodcastsIcon,hash=-1204589671
@@ -349,6 +350,8 @@ id=PlayingTrackInTab,hash=-1907093609
 id=Visualiser,hash=438517797
 id=EditSave,hash=-670367035,bitmap len=674
 id=Delete,hash=432759908
+id=PanelLayout,hash=1110147132
+id=PanelLayoutDisabled,hash=-1525747304
 id=WaitIndicator,hash=685456220,bitmap len=1849
 id=InProgressIndicator,hash=-2125520935,bitmap len=3715
 id=FormBorderBottom,hash=600796000,bitmap len=167

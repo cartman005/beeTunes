@@ -7,16 +7,16 @@
 <!-- beeTunes -->
 
 <!-- Version 4 -->
-<!-- 07/31/2014 -->
+<!-- 08/02/2014 -->
 <!-- Release Notes -->
-<!-- Adjusted colors for tabs in the caption bar and below the header bar, smaller missing album artwork image -->
+<!-- Adjusted colors for tabs and buttons in the caption bar and below the header bar, smaller missing album artwork image, new layout icon -->
 
 <root>
 	<variables>
 	  White="255,255,255"
 	  Black="0,0,0"
 	  Red="255,0,0"
-	  Green="0,255,255"
+	  Green="0,255,0"
 	  Blue="0,0,255"
 	  
 	  Gray-Light="240,240,240"
@@ -38,6 +38,8 @@
 	  Disabled-Text="109,109,109"
 	  List-Default="250,250,250"
 	  List-Alternating="241,244,247"
+	  Scrollbar-Left="226,226,226"
+	  Scrollbar-Right="245,245,245"
 	</variables>
 
 	<colours id="Default">
@@ -57,8 +59,8 @@
 	  <element id="AutoHideMenu">false</element>
 
 	<!-- Color when menu bar is displayed as a button -->
-	  <element id="MenuButton.Default" bg="255,240,240,240" bg2="255,232,232,232" fg="255,0,0,0" brd="0,0,0,0" />
-	  <element id="MenuButton.Border" bg="0,231,231,231" />
+	  <element id="MenuButton.Default" bg="255,240,240,240" bg2="255,232,232,232" fg="255,0,0,0" bdr="0,0,0,0" />
+	  <element id="MenuButton.Border" bg="0,0,0,0" />
 
 	\\ Menu Bars
 	<!-- Justification of File menu -->
@@ -109,30 +111,35 @@
 	<!-- Tab navigation menu background color -->
 	  <element id="Panel.Header.Default" bg="Gray-Dark" bg2="Gray-Dark" fg="Tab-Text" bdr="Gray-Dark" />
 	<!-- Default address bar color -->
-	  <element id="Panel.HeaderControl.Default" bg="Gray-Dark" fg="245,245,245" bdr="Gray-Dark" />
+	  <element id="Panel.HeaderControl.Default" bg="Gray-Dark" fg="Scrollbar-Right" bdr="Gray-Dark" />
 	  <element id="Panel.LocationBarEdit.Default" bg="250,250,250" fg="Black" /> 
+
 	<!-- Toolbar buttons -->
+	<!-- Custom toolbar button with text -->
 	  <element id="Panel.CommandButtonOverride" bg="Gray-Dark" bg2="Gray-Dark" fg="Toolbar-White" />
+	<!-- Custom toolbar button with an icon -->
 	  <element id="Panel.CommandIconOverride" fg="Toolbar-White" />
+	<!-- Panel layout and forward/next navigation buttons -->
 	  <element id="Panel.HeaderButtonOverride.Default" fg="Toolbar-White" />
-	  <element id="Panel.HeaderButtonOverride.Disabled" fg="Toolbar-White" />
-	  <element id="Panel.HeaderButtonOverride.Highlight" fg="5,255,255" />
-	  <element id="CaptionBar.CommandButtonOverride" bg="Gray-Dark" bg2="Gray-Dark" fg="Toolbar-White" />
-	  <element id="CaptionBar.CommandIconOverride" fg="Toolbar-White" />
+	  <element id="Panel.HeaderButtonOverride.Disabled" fg="205,205,205" />
+	  <element id="Panel.HeaderButtonOverride.Highlight" fg="250,250,250" />
+	<!-- Custom toolbar button with text in caption bar -->
+	  <element id="CaptionBar.CommandButtonOverride" bg="237,237,238" fg="250,250,250" />
+	<!-- Custom toolbar button with icon in caption bar -->
+	  <element id="CaptionBar.CommandIconOverride" fg="250,250,250" />
 
 	<!-- A-Z jump panel -->
 	  <element id="Panel.SubHeader.Default" bg="Highlight-Tab-Bottom" fg="Tab-Text" />
 	  
 	<!-- Search box -->
 	<!-- Search box size adjustment slider color -->
-	  <element id="Controls.SearchBox.Default" bg="255,255,250" fg="Black" bdr="225,112,43" />
+	  <element id="Controls.SearchBox.Default" bg="255,255,250" fg="Black" />
 	  <element id="Controls.SearchBox.Lowlight" fg="81,81,81" />
 	  <element id="Controls.SearchBoxSplitter" bg="Gray-Dark" />
 	<!-- Search box border -->
 	  <element id="Panel.SearchBox" bdr="Gray-Dark" />
-
 	<!-- Search box in caption bar -->
-	  <element id="CaptionBar.SearchBox.Default" bg="255,255,250" fg="Black" bdr="225,112,43" />
+	  <element id="CaptionBar.SearchBox.Default" bg="255,255,250" fg="Black" bdr="Border" />
 	  <element id="CaptionBar.SearchBox.Lowlight" fg="81,81,81" />
 	  
 	\\ Tabs bar
@@ -186,8 +193,8 @@
 	  <element id="FullNodeSelect">true</element>
 
 	  <element id="LeftNavigator.ScrollBar" bg="178,186,198" bg2="136,144,159" bdr="137,147,164" />
-	  <element id="LeftNavigator.ScrollBarThumb" bg="226,226,226" bg2="245,245,245" fg="75,75,75" bdr="226,226,226" />
- 	  <element id="LeftNavigator.ScrollBarBackground" bg="226,226,226" bg2="245,245,245" />
+	  <element id="LeftNavigator.ScrollBarThumb" bg="Scrollbar-Left" bg2="Scrollbar-Right" fg="75,75,75" bdr="Scrollbar-Left" />
+ 	  <element id="LeftNavigator.ScrollBarBackground" bg="Scrollbar-Left" bg2="Scrollbar-Right" />
 
 	<!-- Body -->
 	<!-- Library Explorer headers -->
@@ -201,13 +208,10 @@
 	  <element id="Panel.ChildBody.Highlight" bg="Sidebar-Blue" fg="White" />
 	  <element id="Panel.ChildBody.Lowlight" bg="200,204,211" bg2="200,204,211" fg="White" />
 	  <element id="Panel.ChildBody.ScrollBar" bg="178,186,198" bg2="136,144,159" bdr="137,147,164" />
-	  <element id="Panel.ChildBody.ScrollBarThumb" bg="226,226,226" bg2="245,245,245" fg="75,75,75" bdr="226,226,226" />
- 	  <element id="Panel.ChildBody.ScrollBarBackground" bg="226,226,226" bg2="245,245,245" />
+	  <element id="Panel.ChildBody.ScrollBarThumb" bg="Scrollbar-Left" bg2="Scrollbar-Right" fg="75,75,75" bdr="Scrollbar-Left" />
+ 	  <element id="Panel.ChildBody.ScrollBarBackground" bg="Scrollbar-Left" bg2="Scrollbar-Right" />
 	  <element id="LibraryExplorer.Header.Default" bg="Default-Tab-Top" bg2="Default-Tab-Top" fg="Tab-Text" />
-	  
-	  <element id="NowPlayingTabsLeftFlush">true</element> 
-	  <element id="NowPlayingTabsSpacing">0</element> 
-	  
+	  	  
 	<!-- Status bar -->
 	  <element id="Panel.StatusBar.Default" bg="Player-Background" fg="95,95,95" bdr="185,185,185" />
 	  <element id="Panel.StatusBarControl.Default" bg="Toolbar-White" fg="85,85,85" />
@@ -237,8 +241,8 @@
 	  <element id="NowPlayingList[TrackDetail].ListAlternating.Default" bg="List-Alternating" fg="Black" />
 	  <element id="NowPlayingList[TrackDetail].ListAlternating.Disabled" fg="195,195,195" />
 	  <element id="NowPlayingList.ScrollBar" bg="178,186,198" bg2="136,144,159" bdr="137,147,164" />
-	  <element id="NowPlayingList.ScrollBarThumb" bg="226,226,226" bg2="245,245,245" fg="75,75,75" bdr="226,226,226" />
- 	  <element id="NowPlayingList.ScrollBarBackground" bg="226,226,226" bg2="245,245,245" />
+	  <element id="NowPlayingList.ScrollBarThumb" bg="Scrollbar-Left" bg2="Scrollbar-Right" fg="75,75,75" bdr="Scrollbar-Left" />
+ 	  <element id="NowPlayingList.ScrollBarBackground" bg="Scrollbar-Left" bg2="Scrollbar-Right" />
 
 	<!-- Column browser, thumbnail browser, podcast subscriptions browser -->
 	  <element id="FilterPanel.ListHeader" bg="Highlight-Tab-Bottom" bg2="237,237,237" fg="98,98,98" bdr="Highlight-Tab-Top" />
@@ -249,16 +253,16 @@
 	  <element id="FilterPanel.ListAlternating.Default" bg="List-Default" fg="Black" />
 	  <element id="FilterPanel.ListAlternating.Disabled" fg="195,195,195" />
 	  <element id="FilterPanel.ScrollBar" bg="178,186,198" bg2="136,144,159" bdr="137,147,164" />
-	  <element id="FilterPanel.ScrollBarThumb" bg="226,226,226" bg2="245,245,245" fg="75,75,75" bdr="226,226,226" />
- 	  <element id="FilterPanel.ScrollBarBackground" bg="226,226,226" bg2="245,245,245" />
+	  <element id="FilterPanel.ScrollBarThumb" bg="Scrollbar-Left" bg2="Scrollbar-Right" fg="75,75,75" bdr="Scrollbar-Left" />
+ 	  <element id="FilterPanel.ScrollBarBackground" bg="Scrollbar-Left" bg2="Scrollbar-Right" />
 
 	  <element id="LyricsPanel" bg="Gray-Light" fg="Black" bdr="Border" />
 
 	<!-- Scroll track details on right sidebar (only shown when there are a lot of rows in Track Details Display Fields list -->
 	  <element id="TrackInfoPanel" bg="White" fg="Black" bdr="137,140,149" />
 	  <element id="TrackInfoPanel.ScrollBar" bg="178,186,198" bg2="136,144,159" bdr="137,147,164" />
-	  <element id="TrackInfoPanel.ScrollBarThumb" bg="226,226,226" bg2="245,245,245" fg="75,75,75" bdr="226,226,226" />
-	  <element id="TrackInfoPanel.ScrollBarBackground" bg="226,226,226" bg2="245,245,245" />
+	  <element id="TrackInfoPanel.ScrollBarThumb" bg="Scrollbar-Left" bg2="Scrollbar-Right" fg="75,75,75" bdr="Scrollbar-Left" />
+	  <element id="TrackInfoPanel.ScrollBarBackground" bg="Scrollbar-Left" bg2="Scrollbar-Right" />
 	  <element id="ArtworkPanel" bg="Gray-Light" fg="Black" bdr="Border" />
 	  
 	\\ Library
@@ -276,7 +280,7 @@
 	  <element id="Content[TrackDetail].Body.Disabled" bg="List-Alternating" fg="195,195,195" />
 	<!-- Missing track color 2 -->
 	  <element id="Content[TrackDetail].ListAlternating.Disabled" bg="List-Alternating" fg="195,195,195" />
-
+	<!-- Line between artists in album and tracks view -->
 	  <element id="Content[AlbumAndTracks].ArtistSplitterLine" bg="Toolbar-White"/>
 	  
 	<!-- Artwork View -->
@@ -299,7 +303,7 @@
 	<!-- Rated/Unrated highlighted list star color -->
 	  <element id="Panel.StarRating.Highlight" fg="237,241,247" fg2="Highlight" /> 
 	<!-- Rated/Unrated highlighted, unfocused list star color -->
-	  <element id="Panel.StarRating.Lowlight" fg="245,245,245" fg2="Lowlight" /> 
+	  <element id="Panel.StarRating.Lowlight" fg="Scrollbar-Right" fg2="Lowlight" /> 
 
 	<!-- Last.fm loved icon -->
 	  <element id="Panel.NotLovedIcon.Highlight" fg="226,154,146" fg2="Highlight" /> 
@@ -314,9 +318,9 @@
 	  <element id="ScrollbarNoArrows">false</element>
 	  <element id="Panel.ScrollBar.Default" bg="178,186,198" bg2="136,144,159" bdr="137,147,164" />
 	<!-- Scroll bar arrows -->
-	  <element id="Panel.ScrollBarThumb.Default" bg="226,226,226" bg2="245,245,245" fg="75,75,75" />
+	  <element id="Panel.ScrollBarThumb.Default" bg="Scrollbar-Left" bg2="Scrollbar-Right" fg="75,75,75" />
 	<!-- Scroll bar stationary background -->
-	  <element id="Panel.ScrollBarBackground.Default" bg="226,226,226" bg2="245,245,245" /> 
+	  <element id="Panel.ScrollBarBackground.Default" bg="Scrollbar-Left" bg2="Scrollbar-Right" /> 
 
 	\\ Players
 	<!-- Default (Bottom) Player -->
@@ -465,7 +469,7 @@
 	  <element id="Controls.InputControl.Lowlight" bg="Lowlight" fg="Black" />
 	<!-- Used in Properties tab of Tag Editor -->
 	  <element id="Controls.LockedInputControl.Default" fg="Disabled-Text" bg="White" bdr="112,12,112" />
-	  <element id="Controls.LockedInputControl.Disabled" fg="Disabled-Text" bg="245,245,245" bdr="112,112,112" />
+	  <element id="Controls.LockedInputControl.Disabled" fg="Disabled-Text" bg="Scrollbar-Right" bdr="112,112,112" />
 	  <element id="Controls.SystemInputControl.Highlight" bg="195,22,15" fg="Black" bdr="80,80,80" />
 	  <element id="Controls.RadioButton.Default" bg="Black" fg="33,33,33" />
 	  <element id="Controls.RadioButton.Disabled" bg="Disabled-Text"  />
@@ -532,6 +536,10 @@
 	  <element id="UseSquareCaptionBorders">Win8+</element>
 	  <element id="ClassicNewTabButton">false</element>
 	  <element id="UseSquareTabCorners">true</element>
+	<!-- Tabs on track info in right column -->
+	  <element id="NowPlayingTabsLeftFlush">true</element> 
+	  <element id="NowPlayingTabsLeftOffset">1</element> 
+	  <element id="NowPlayingTabsSpacing">1</element> 
 	</settings>
 	<images id="Default">
 		<element id="MusicLibrary">
@@ -1658,6 +1666,27 @@
 			UKlUDiW+iud0Ou3Ytr1AUNf+AmY0dnjwkvEKBoNBSa/9pgW0FboRLc0dYEZjhwfvcDgseQViznGc
 			ff1/MXyIT2N+NzCjfeDBS8ZfAPP1ev0gkUgQ4ORZGTB3dHILD95Zzl/glozH4+1qtXqcz+cf9PJt
 			FbaKxWITbTKZbOPxZ/zhGVxtWayKLbFhZjT32j9MrW+xxprtnWq8jgAAAABJRU5ErkJggg==
+		</element>
+		<element id="PanelLayout">
+			iVBORw0KGgoAAAANSUhEUgAAABwAAAAUCAYAAACeXl35AAAAAXNSR0IArs4c6QAAAARnQU1B
+			AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5F
+			VCB2My41LjEwMPRyoQAAAFxJREFUSEvtkdEGACAMRe//f/JelnFjVimyJB0ua9NOhKdRVVaH
+			aIQiojvhmiH3CHlc5gsrd/why+mr47x318f6aUKjzn0/VWjEXrow8oWPCnfCNUMaYTbHhQBQ
+			AM6iQAr0/tNfAAAAAElFTkSuQmCC
+		</element>
+		<!-- (Hamburger menu) <element id="PanelLayout">
+			iVBORw0KGgoAAAANSUhEUgAAABwAAAAUCAYAAACeXl35AAAAAXNSR0IArs4c6QAAAARnQU1B
+			AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5F
+			VCB2My41LjEwMPRyoQAAAHZJREFUSEvtlNEKwCAIRf3/D+hje3Eal0jmQl9iuB04L6ubpDH6
+			qUfvvYmctCGexzksJOJ5JKw3TIt4HmYe1gUtcue00bTUWX9umbc5IuKT3dqcmyobbg8iIo4y
+			yHf/ZmtBtTZokZlPwA/8aY6+gbXYkYIvhugCF1AuOitmtGkAAAAASUVORK5CYII=
+		</element>-->
+		<element id="PanelLayoutDisabled">
+			iVBORw0KGgoAAAANSUhEUgAAABwAAAAUCAYAAACeXl35AAAAAXNSR0IArs4c6QAAAARnQU1B
+			AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5F
+			VCB2My41LjEwMPRyoQAAAHZJREFUSEvtlNEKwCAIRf3/D+hje3Eal0jmQl9iuB04L6ubpDH6
+			qUfvvYmctCGexzksJOJ5JKw3TIt4HmYe1gUtcue00bTUWX9umbc5IuKT3dqcmyobbg8iIo4y
+			yHf/ZmtBtTZokZlPwA/8aY6+gbXYkYIvhugCF1AuOitmtGkAAAAASUVORK5CYII=
 		</element>
 		<!--<element id="MusicLibraryInTab">
 			iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGOfPtRkwAAACBjSFJN
